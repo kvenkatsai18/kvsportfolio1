@@ -5,6 +5,13 @@ menuBtn.addEventListener('click', () => {
   navMenu.classList.toggle('open');
 });
 
+// Close menu when clicking a nav link (mobile)
+navMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+  });
+});
+
 const successMsg = document.getElementById('successMsg');
 const contactForm = document.getElementById('contactForm');
 
