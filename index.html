@@ -3,109 +3,154 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Venkat Sai. Kolli</title>
+  <title>Venkat Sai Kolli</title>
+  <meta name="description" content="Founder & CEO @OurBuddy | Web Design & Developer Specialist @ MoneyBot LLC | Tech Innovator, Speaker" />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- NAVIGATION -->
   <header class="site-header" id="home">
-    <div class="container header-inner">
-      <div class="logo">Venkat Sai Kolli</div>
-      <nav class="nav-menu" id="navMenu">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#publications">Publications</a>
-        <a href="#podcast">Podcast</a>
-        <a href="#speaking">Judging & Mentoring</a>
-        <a href="#media">Media</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <div class="container">
+      <div class="header-inner">
+        <a href="#home" class="logo">Venkat Sai.</a>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#podcast">Podcast</a></li>
+            <li><a href="#speaking">Speaking</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div style="display:flex;gap:0.75rem;align-items:center;flex-shrink:0;">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <span id="themeLabel">Theme</span>
+          </button>
+          <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
+
+    <!-- HERO -->
     <section class="hero" id="hero">
-      <div class="container hero-content">
-        <div class="hero-profile">
-          <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" class="profile-image" />
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="hero-eyebrow">Founder &amp; Innovator</p>
+          <h1>Building products that <span class="accent">matter</span>.</h1>
+          <p>Founder of OurBuddy &mdash; a privacy-first carpooling platform. Web Design &amp; Developer Specialist at MoneyBot LLC. Currently shaping the future of financial literacy for high school students.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
         </div>
-        <h1>Venkat Sai Kolli</h1>
-        <p>Founder & CEO @OurBuddy | Web Design & Developer Specialist @ MoneyBot LLC | Tech Innovator | Speaker</p>
-        <div class="hero-buttons">
-          <a class="btn" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+        <div class="hero-right">
+          <div class="profile-wrap">
+            <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" />
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
+    <!-- ABOUT -->
+    <section class="section" id="about">
       <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-          <p>I'm an F-1 international student founder and creator of <strong>OurBuddy</strong> — a privacy-first community platform for short-distance carpooling and accommodation connections.</p>
-          <p>As the solo founder and developer, I built the entire MVP from scratch using Flutter and Firebase, launched it on the App Store in early 2025, and am actively marketing and iterating based on user feedback. The app features 24-hour auto-deleting chats, personal information masking, location-based SOS alerts, and in-app moderation — prioritizing trust, safety, and community.</p>
-          <p>Currently serving as <strong>Web Design & Developer Specialist at MoneyBot LLC</strong>, while mentoring at Startup Weekend Louisville and contributing to the broader startup ecosystem.</p>
-          <div class="about-highlights">
-            <div class="highlight-box">
-              <p><strong>🌍 Location</strong></p>
-              <p>United States (Denver/Louisville area)</p>
-            </div>
-            <div class="highlight-box">
-              <p><strong>🚗 Current Focus</strong></p>
-              <p>OurBuddy + MoneyBot</p>
-            </div>
-            <div class="highlight-box">
-              <p><strong>🎓 Education</strong></p>
-              <p>MS IT (University of Denver), BTech IT (BVRIT)</p>
-            </div>
-            <div class="highlight-box">
-              <p><strong>🏆 Recognition</strong></p>
-              <p>Mentor @ Startup Weekend Louisville, TiE Denver</p>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="section-label">About</p>
+            <p>I&rsquo;m an F-1 international student founder and creator of <strong>OurBuddy</strong> &mdash; a privacy-first community platform for short-distance carpooling and accommodation connections.</p>
+            <p>As the solo founder and developer, I built the entire MVP from scratch using Flutter and Firebase, launched it on the App Store in early 2025, and am actively marketing and iterating based on user feedback. The app features 24-hour auto-deleting chats, personal information masking, location-based SOS alerts, and in-app moderation.</p>
+            <p>Currently serving as <strong>Web Design &amp; Developer Specialist at MoneyBot LLC</strong>, while mentoring at Startup Weekend Louisville and contributing to the broader startup ecosystem.</p>
+            <div class="about-links">
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener">
+                LinkedIn
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
             </div>
           </div>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener">Connect on LinkedIn</a>
+          <div class="about-sidebar reveal">
+            <div class="info-card">
+              <p class="label">Location</p>
+              <p class="value">United States (Denver/Louisville)</p>
+            </div>
+            <div class="info-card">
+              <p class="label">Current Focus</p>
+              <p class="value">OurBuddy + MoneyBot</p>
+            </div>
+            <div class="info-card">
+              <p class="label">Education</p>
+              <p class="value">MS IT (University of Denver), BTech IT (BVRIT)</p>
+            </div>
+            <div class="info-card">
+              <p class="label">Recognition</p>
+              <p class="value">Mentor @ Startup Weekend Louisville, TiE Denver</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
       <div class="container">
-        <h2>Featured Projects</h2>
-        <div class="project-grid">
-          <article class="project-card">
+        <div class="section-header reveal">
+          <p class="section-label">Featured Work</p>
+          <h2 class="section-title">Selected Projects</h2>
+          <p class="section-desc">Products and platforms built from scratch, shipped, and iterated on with real users.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
             <h3>OurBuddy App</h3>
-            <p><strong>Privacy-first community platform</strong> for short-distance carpooling and accommodation connections. Built from scratch using Flutter & Firebase, launched on App Store in 2025.</p>
-            <p class="highlight">✓ 24-hr auto-delete chats  ✓ Personal info masking  ✓ SOS alerts  ✓ Content moderation</p>
-            <p><strong>Status:</strong> Actively growing | <strong>Patent:</strong> Filed Oct 2025</p>
-            <a href="https://www.ourbapp.com/" target="_blank" rel="noopener">Visit OurBuddy</a>
+            <p>Privacy-first community platform for short-distance carpooling and accommodation connections. Built with Flutter &amp; Firebase, launched on App Store in 2025.</p>
+            <p class="highlight">24-hr auto-delete chats &middot; Personal info masking &middot; SOS alerts &middot; Content moderation</p>
+            <p class="status-line">Status: Actively growing &middot; Patent: Filed Oct 2025</p>
+            <a href="https://www.ourbapp.com/" target="_blank" rel="noopener">
+              Visit OurBuddy
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </article>
-          <article class="project-card">
+          <article class="project-card reveal">
             <h3>IIW7 Website</h3>
-            <p><strong>7th International Indentation Workshop</strong> — Comprehensive Wix website for 250+ international attendees. Integrated payment, registration, and event management.</p>
-            <p class="highlight">📈 <strong>20,483% increase</strong> in Google organic search traffic</p>
-            <p>✓ Mobile-responsive  ✓ SEO-optimized  ✓ Processed 300+ registrations</p>
-            <a href="#">View project</a>
+            <p>7th International Indentation Workshop &mdash; comprehensive Wix website for 250+ international attendees with integrated payment, registration, and event management.</p>
+            <p class="highlight">20,483% increase in Google organic search traffic</p>
+            <p class="status-line">Mobile-responsive &middot; SEO-optimized &middot; 300+ registrations processed</p>
+            <a href="#">
+              View Project
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </article>
-          <article class="project-card">
+          <article class="project-card reveal">
             <h3>MoneyBot LLC</h3>
-            <p><strong>AI-powered financial literacy platform</strong> for high school students combining gamification and real-world skills.</p>
-            <p class="highlight">🏆 Named "Startups to Watch — 2026" by Louisville Business First</p>
-            <p><strong>My Role:</strong> Web Design & Developer Specialist</p>
-            <a href="https://getmoneybot.com" target="_blank" rel="noopener">Visit MoneyBot LLC</a>
+            <p>AI-powered financial literacy platform for high school students combining gamification and real-world skills.</p>
+            <p class="highlight">Named &ldquo;Startups to Watch &ndash; 2026&rdquo; by Louisville Business First</p>
+            <p class="status-line">Role: Web Design &amp; Developer Specialist</p>
+            <a href="https://getmoneybot.com" target="_blank" rel="noopener">
+              Visit MoneyBot
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="skills" id="skills">
+    <!-- SKILLS -->
+    <section class="section" id="skills">
       <div class="container">
-        <h2>Skills & Expertise</h2>
-        <div class="skills-section">
-          <div class="skill-group">
-            <h3>Product & Design</h3>
+        <div class="section-header reveal">
+          <p class="section-label">Expertise</p>
+          <h2 class="section-title">Skills &amp; Tools</h2>
+        </div>
+        <div class="skills-groups">
+          <div class="skill-group reveal">
+            <h3>Product &amp; Design</h3>
             <div class="tags">
               <span>Figma</span>
               <span>UI/UX Design</span>
@@ -115,7 +160,7 @@
               <span>Prototyping</span>
             </div>
           </div>
-          <div class="skill-group">
+          <div class="skill-group reveal">
             <h3>Development</h3>
             <div class="tags">
               <span>Flutter</span>
@@ -126,8 +171,8 @@
               <span>GoDaddy</span>
             </div>
           </div>
-          <div class="skill-group">
-            <h3>Startup & Leadership</h3>
+          <div class="skill-group reveal">
+            <h3>Startup &amp; Leadership</h3>
             <div class="tags">
               <span>Founder/CEO</span>
               <span>Project Management</span>
@@ -141,94 +186,88 @@
       </div>
     </section>
 
-    <section class="experience" id="experience">
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
       <div class="container">
-        <h2>Experience</h2>
-        <div class="timeline">
+        <div class="section-header reveal">
+          <p class="section-label">Career</p>
+          <h2 class="section-title">Experience</h2>
+        </div>
+        <div class="timeline reveal">
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Web Design & Developer Specialist</h3>
-              <p class="company">MoneyBot LLC</p>
-              <p class="date">Dec 2025 - Present · 5 months · Kentucky, United States (Hybrid)</p>
-              <p>Building financial education platform for high school students using AI-powered learning and gamification.</p>
-            </div>
+            <h3>Web Design &amp; Developer Specialist</h3>
+            <p class="company">MoneyBot LLC</p>
+            <p class="date">Dec 2025 &ndash; Present &middot; 5 months &middot; Kentucky, United States (Hybrid)</p>
+            <p>Building financial education platform for high school students using AI-powered learning and gamification.</p>
           </div>
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Founder, CEO</h3>
-              <p class="company">OurBuddy (Newtab Technologies LLC)</p>
-              <p class="date">Jan - Dec 2025 · 1 year · Denver, Colorado (Remote)</p>
-              <p>Led creation of user flows, wireframes, and UI/UX prototypes. Managed cross-functional teams and coordinated stakeholder collaboration.</p>
-            </div>
+            <h3>Founder, CEO</h3>
+            <p class="company">OurBuddy (Newtab Technologies LLC)</p>
+            <p class="date">Jan &ndash; Dec 2025 &middot; 1 year &middot; Denver, Colorado (Remote)</p>
+            <p>Led creation of user flows, wireframes, and UI/UX prototypes. Managed cross-functional teams and coordinated stakeholder collaboration.</p>
           </div>
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>WordPress Developer</h3>
-              <p class="company">Vipassana Meditation Centre Dharamshala</p>
-              <p class="date">May 2024 - Aug 2025 · 1 yr 4 mos · Remote</p>
-              <p>Developed and improved Vipassana organization's website, implementing design updates and enhancing user experience.</p>
-            </div>
+            <h3>WordPress Developer</h3>
+            <p class="company">Vipassana Meditation Centre Dharamshala</p>
+            <p class="date">May 2024 &ndash; Aug 2025 &middot; 1 yr 4 mos &middot; Remote</p>
+            <p>Developed and improved Vipassana organization&rsquo;s website, implementing design updates and enhancing user experience.</p>
           </div>
           <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3>Founder, CEO</h3>
-              <p class="company">Newtab Technologies</p>
-              <p class="date">Mar 2020 - Mar 2024 · 4 years 1 month · Hyderabad, India</p>
-              <p>Founded and led startup focused on start-up leadership, user experience design, and product development.</p>
-            </div>
+            <h3>Founder, CEO</h3>
+            <p class="company">Newtab Technologies</p>
+            <p class="date">Mar 2020 &ndash; Mar 2024 &middot; 4 years 1 month &middot; Hyderabad, India</p>
+            <p>Founded and led startup focused on startup leadership, user experience design, and product development.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="education" id="education">
+    <!-- EDUCATION -->
+    <section class="section" id="education">
       <div class="container">
-        <h2>Education & Certifications</h2>
-        <div class="education-grid">
-          <article class="edu-card">
+        <div class="section-header reveal">
+          <p class="section-label">Background</p>
+          <h2 class="section-title">Education</h2>
+        </div>
+        <div class="education-grid reveal">
+          <div class="edu-card">
             <div class="edu-header">
               <h3>Master of Science</h3>
-              <p class="edu-date">Mar 2023 - Nov 2024</p>
+              <p class="edu-date">Mar 2023 &ndash; Nov 2024</p>
             </div>
-            <p class="edu-degree">Information Technology</p>
-            <p class="edu-school">🎓 University of Denver</p>
-            <div class="edu-details">
-              <strong>Specialization:</strong>
+            <p class="degree">Information Technology</p>
+            <p class="school">University of Denver</p>
+            <div class="specs">
               <ul>
-                <li>Web Design & Development</li>
+                <li>Web Design &amp; Development</li>
                 <li>UI/UX Design</li>
                 <li>Product Development</li>
               </ul>
             </div>
-          </article>
-          <article class="edu-card">
+          </div>
+          <div class="edu-card">
             <div class="edu-header">
               <h3>Bachelor of Technology</h3>
-              <p class="edu-date">2018 - 2022</p>
+              <p class="edu-date">2018 &ndash; 2022</p>
             </div>
-            <p class="edu-degree">Information Technology</p>
-            <p class="edu-school">🎓 BV Raju Institute of Technology (BVRIT)</p>
-            <div class="edu-details">
-              <strong>Location:</strong>
+            <p class="degree">Information Technology</p>
+            <p class="school">BV Raju Institute of Technology (BVRIT), Hyderabad</p>
+            <div class="specs">
               <ul>
                 <li>Hyderabad, Telangana, India</li>
               </ul>
             </div>
-          </article>
+          </div>
         </div>
-        <div class="certifications-section">
+        <div class="certs-section reveal">
           <h3>Professional Certifications</h3>
-          <div class="cert-items">
-            <div class="cert-item">
-              <p class="cert-name">🏆 Google: Foundations of UX Design</p>
+          <div class="certs-grid">
+            <div class="cert-card">
+              <p class="cert-name">Google: Foundations of UX Design</p>
               <p class="cert-date">Apr 2024</p>
             </div>
-            <div class="cert-item">
-              <p class="cert-name">🤖 Udemy: Machine Learning for Absolute Beginners</p>
+            <div class="cert-card">
+              <p class="cert-name">Udemy: Machine Learning for Absolute Beginners</p>
               <p class="cert-date">May 2020</p>
             </div>
           </div>
@@ -236,173 +275,215 @@
       </div>
     </section>
 
-    <section class="publications" id="publications">
+    <!-- PUBLICATIONS -->
+    <section class="section" id="publications">
       <div class="container">
-        <h2>Publications & Research</h2>
-        <div class="publications-grid">
-          <article class="publication-card">
+        <div class="section-header reveal">
+          <p class="section-label">Research</p>
+          <h2 class="section-title">Publications</h2>
+        </div>
+        <div class="pubs-grid">
+          <article class="pub-card reveal">
             <div class="pub-header">
               <h3>The Integration of AI into UI and UX Design</h3>
-              <p class="pub-date">October 29, 2025</p>
+              <p class="pub-date">Oct 29, 2025</p>
             </div>
-            <p class="pub-source">📄 Published on <strong>SSRN</strong></p>
-            <p class="pub-description">This study examines how Artificial Intelligence (AI) can be used to improve User Interface (UI) and User Experience (UX) design for increased usability, engagement, and trust. The research identifies four recurring problems—limited transparency, algorithmic bias, adoption costs, and capability gaps—and reviews ways to mitigate them through adaptive interfaces, emotion-sensitive interaction, and AI-supported prototyping.</p>
-            <div class="pub-focus">
-              <strong>Key Focus Areas:</strong>
+            <p class="pub-source">Published on SSRN</p>
+            <p class="pub-desc">This study examines how Artificial Intelligence can be used to improve UI and UX design for increased usability, engagement, and trust. Identifies four recurring problems and reviews mitigation strategies.</p>
+            <div class="key-topics">
               <ul>
-                <li>AI in design workflows</li>
-                <li>Explainability & Privacy in AI</li>
-                <li>Fairness & Inclusivity</li>
-                <li>People-centered design</li>
+                <li>AI in Design Workflows</li>
+                <li>Explainability &amp; Privacy</li>
+                <li>Fairness &amp; Inclusivity</li>
+                <li>People-Centered Design</li>
               </ul>
             </div>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5556881" class="pub-link" target="_blank" rel="noopener">Read on SSRN →</a>
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5556881" target="_blank" rel="noopener">
+              Read on SSRN
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </article>
-          <article class="publication-card">
+          <article class="pub-card reveal">
             <div class="pub-header">
               <h3>Think Before You Upload to AI: Staying Safe in the Age of AI</h3>
-              <p class="pub-date">October 5, 2025</p>
+              <p class="pub-date">Oct 5, 2025</p>
             </div>
-            <p class="pub-source">📄 Published on <strong>Illumination</strong></p>
-            <p class="pub-description">A practical guide exploring the considerations and security implications of uploading data to AI systems. This publication raises awareness about privacy risks, data handling practices, and best practices for protecting sensitive information when using AI tools in personal and professional contexts.</p>
-            <div class="pub-focus">
-              <strong>Key Topics:</strong>
+            <p class="pub-source">Published on Illumination</p>
+            <p class="pub-desc">A practical guide exploring the considerations and security implications of uploading data to AI systems. Raises awareness about privacy risks and best practices for protecting sensitive information.</p>
+            <div class="key-topics">
               <ul>
-                <li>AI Privacy & Security</li>
-                <li>Data Protection Best Practices</li>
+                <li>AI Privacy &amp; Security</li>
+                <li>Data Protection</li>
                 <li>Risk Awareness</li>
                 <li>Safe AI Tool Usage</li>
               </ul>
             </div>
-            <a href="https://medium.com/illumination/think-before-you-upload-to-ai-staying-safe-in-the-age-of-ai-d78d0746acf7" class="pub-link" target="_blank" rel="noopener">Read on Illumination →</a>
+            <a href="https://medium.com/illumination/think-before-you-upload-to-ai-staying-safe-in-the-age-of-ai-d78d0746acf7" target="_blank" rel="noopener">
+              Read on Medium
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="podcast" id="podcast">
+    <!-- PODCAST -->
+    <section class="section" id="podcast">
       <div class="container">
-        <h2>Podcast Appearances</h2>
+        <div class="section-header reveal">
+          <p class="section-label">Media</p>
+          <h2 class="section-title">Podcast Appearances</h2>
+        </div>
         <div class="podcast-grid">
-          <article class="podcast-card">
-            <a href="https://youtu.be/ImqFHYlikh4?si=T0zLpxukPn99Yi99" target="_blank" rel="noopener" class="podcast-thumbnail">
-              <img src="https://img.youtube.com/vi/ImqFHYlikh4/maxresdefault.jpg" alt="Podcast appearance on YouTube" />
-              <div class="play-button">▶</div>
+          <article class="podcast-card reveal">
+            <a href="https://youtu.be/ImqFHYlikh4" target="_blank" rel="noopener" class="podcast-thumb">
+              <img src="https://img.youtube.com/vi/ImqFHYlikh4/maxresdefault.jpg" alt="Startup Journey While on OPT" loading="lazy" />
+              <div class="play-btn">
+                <div class="play-btn-inner">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
             </a>
             <div class="podcast-info">
               <h3>Startup Journey While on OPT</h3>
-              <p>Featured podcast discussion about startups and entrepreneurship.</p>
-              <a href="https://youtu.be/ImqFHYlikh4?si=T0zLpxukPn99Yi99" target="_blank" rel="noopener" class="btn btn-secondary">Watch on YouTube</a>
+              <p>Featured podcast discussion about startups, entrepreneurship, and building while on OPT visa status.</p>
+              <a class="btn btn-ghost" href="https://youtu.be/ImqFHYlikh4" target="_blank" rel="noopener">Watch on YouTube</a>
             </div>
           </article>
-          <article class="podcast-card">
-            <a href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC35JbEBEqXnPfaqvO9gXmfeGPs_OFU01rY" target="_blank" rel="noopener" class="podcast-thumbnail">
-              <img src="https://media.licdn.com/media-proxy/ext?w=800&h=450&f=pjpg&hash=8sE5gfXrT3zPp8yZXpVn2X123" alt="The Startup Kitchen Show Episode 007" />
-              <div class="play-button">▶</div>
+          <article class="podcast-card reveal">
+            <a href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC" target="_blank" rel="noopener" class="podcast-thumb">
+              <img src="https://media.licdn.com/media-proxy/ext?w=800&h=450&f=pjpg&hash=8sE5gfXrT3zPp8yZXpVn2X123" alt="The Startup Kitchen Show Episode 007" loading="lazy" />
+              <div class="play-btn">
+                <div class="play-btn-inner">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+              </div>
             </a>
             <div class="podcast-info">
-              <h3>The Startup Kitchen Show - Episode 007</h3>
-              <p>Discussion with CEO on building in public and startup journey.</p>
-              <a href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC35JbEBEqXnPfaqvO9gXmfeGPs_OFU01rY" target="_blank" rel="noopener" class="btn btn-secondary">View on LinkedIn</a>
+              <h3>The Startup Kitchen Show &ndash; Episode 007</h3>
+              <p>Discussion on building in public and the startup journey from India to the US.</p>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC" target="_blank" rel="noopener">View on LinkedIn</a>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="speaking" id="speaking">
+    <!-- SPEAKING -->
+    <section class="section" id="speaking">
       <div class="container">
-        <h2>Speaking & Mentoring</h2>
+        <div class="section-header reveal">
+          <p class="section-label">Community</p>
+          <h2 class="section-title">Speaking &amp; Mentoring</h2>
+        </div>
         <div class="speaking-grid">
-          <div class="speaking-card">
-            <h3>🏆 Judge</h3>
+          <article class="speaking-card reveal">
+            <h3>Judge</h3>
             <p class="speaking-title">DubHacks</p>
             <p class="speaking-date">Oct 2025</p>
-            <p class="speaking-category">Education</p>
-            <p class="speaking-description">DubHacks is one of the largest collegiate hackathons in the Pacific Northwest. I served as a Judge and Mentor, guiding student teams and evaluating their innovative projects.</p>
-          </div>
-          <div class="speaking-card">
-            <h3>🏆 Judge & Mentor</h3>
-            <p class="speaking-title">&hacks: William & Mary's Annual Hackathon</p>
+            <span class="speaking-category">Education</span>
+            <p>Served as Judge and Mentor at one of the largest collegiate hackathons in the Pacific Northwest, guiding student teams and evaluating their innovative projects.</p>
+          </article>
+          <article class="speaking-card reveal">
+            <h3>Judge &amp; Mentor</h3>
+            <p class="speaking-title">&amp;hacks: William &amp; Mary&rsquo;s Annual Hackathon</p>
             <p class="speaking-date">Sep 2025</p>
-            <p class="speaking-category">Education</p>
-            <p class="speaking-description">Served as Judge & Mentor at &hacks XI (William & Mary), evaluating projects in AI, sustainability, health, and social good, and mentoring student teams on UI/UX, product-market fit, and app development to help turn ideas into impactful prototypes.</p>
+            <span class="speaking-category">Education</span>
+            <p>Evaluated projects in AI, sustainability, health, and social good, and mentored student teams on UI/UX, product-market fit, and app development.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA -->
+    <section class="section" id="media">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Press</p>
+          <h2 class="section-title">Media Coverage</h2>
+        </div>
+        <div class="media-card reveal">
+          <a href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" class="media-thumbnail" target="_blank" rel="noopener">
+            <img src="Thumbnail.png" alt="MoneyBot WNKY Media Coverage" loading="lazy" />
+            <span class="media-badge">News</span>
+          </a>
+          <div class="media-meta">
+            <img src="wnky.jpeg" alt="WNKY 40" />
+            <span class="media-source">WNKY 40</span>
           </div>
+          <h3>MoneyBot Enters Classrooms Around the Region</h3>
+          <p class="media-desc">WNKY News 40 coverage featuring MoneyBot LLC&rsquo;s initiative to bring financial literacy education to classrooms across the region.</p>
+          <div class="media-quote">
+            <blockquote>&ldquo;Millions of students are graduating without knowing what financial education is like, what assets are, what liabilities. Now, we are kind of giving them financial education, which I think is very important for students to live a better life.&rdquo;</blockquote>
+            <cite>&mdash; Venkat Sai Kolli, Web Design &amp; Developer Specialist at MoneyBot LLC</cite>
+          </div>
+          <a class="btn btn-ghost" href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" target="_blank" rel="noopener">Watch Video &amp; Read Article</a>
         </div>
       </div>
     </section>
 
-    <section class="media" id="media">
-      <div class="container">
-        <h2>Media Coverage</h2>
-        <div class="media-grid">
-            <article class="media-card">
-              <a href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" class="media-thumbnail" target="_blank" rel="noopener">
-                <img src="Thumbnail.png" alt="MoneyBot WNKY Media Coverage" class="thumbnail-image" />
-                <div class="media-play-overlay">
-                  <span class="play-icon">▶</span>
-                </div>
-                <div class="media-badge">NEWS</div>
-              </a>
-              <img src="wnky.jpeg" alt="WNKY 40" class="media-logo-img" />
-              <span class="media-name">WNKY 40</span>
-              <h3>MoneyBot Enters Classrooms Around the Region</h3>
-              <p class="media-description">WNKY News 40 coverage featuring MoneyBot LLC's initiative to bring financial literacy education to classrooms across the region. The segment highlights how the AI-powered platform is transforming how students learn about personal finance.</p>
-              <div class="media-quote">
-                <blockquote>"Millions of students are graduating without knowing what financial education is like, what assets are, what liabilities. Now, we are kind of giving them financial education, which I think is very important for students to live a better life."</blockquote>
-                <cite>— Venkat Sai Kolli, Web Design & Developer Specialist at MoneyBot LLC</cite>
-              </div>
-              <a href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" class="btn btn-secondary" target="_blank" rel="noopener">Watch Video & Read Article</a>
-            </article>
-        </div>
+    <!-- FOOTER CTA -->
+    <section class="footer-cta section">
+      <div class="container reveal">
+        <h2>Let&rsquo;s build something <span style="color:var(--accent)">great</span>.</h2>
+        <p>Interested in collaboration, mentoring, or just want to chat about startups?</p>
+        <a class="btn btn-primary" href="#contact">Get in Touch</a>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- CONTACT -->
+    <section class="section" id="contact">
       <div class="container">
-        <h2>Let's Connect</h2>
-        <p>Interested in collaboration, mentoring, or just want to chat about startups? Reach out!</p>
-        <div class="contact-layout">
-          <div class="contact-content">
+        <div class="section-header reveal">
+          <p class="section-label">Connect</p>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-cards reveal">
             <div class="contact-card">
-              <h3>📧 Chat With Me</h3>
-              <p>I'm always open to discussing new projects, startup ideas, and opportunities. Feel free to reach out!</p>
+              <h3>Open to opportunities</h3>
+              <p>I&rsquo;m always open to discussing new projects, startup ideas, and opportunities. Feel free to reach out.</p>
             </div>
             <div class="contact-card">
-              <h3>💼 Connect & Follow</h3>
+              <h3>Connect &amp; Follow</h3>
               <p>Catch my latest updates and insights on startups, tech, and entrepreneurship.</p>
-              <a class="btn btn-secondary" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener">Visit LinkedIn Profile</a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener" style="margin-top:0.75rem;">LinkedIn Profile</a>
             </div>
             <div class="contact-card">
-              <h3>⚡ Response Time</h3>
-              <p>I typically respond within 24-48 hours. Looking forward to connecting with you!</p>
+              <h3>Response Time</h3>
+              <p>I typically respond within 24&ndash;48 hours. Looking forward to connecting.</p>
             </div>
           </div>
-          <form id="contactForm" class="contact-form" autocomplete="off">
+          <form id="contactForm" class="contact-form reveal" autocomplete="off">
             <h3>Send a Message</h3>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Mentoring / Collab / Coffee Chat?" required />
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Mentoring / Collab / Coffee Chat?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
             <p class="success-msg" id="successMsg" aria-live="polite"></p>
           </form>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Venkat Sai Kolli. Built with HTML, CSS, and JavaScript.</p>
+      <p>&copy; <span id="year"></span> Venkat Sai Kolli. Built with HTML, CSS, and JavaScript.</p>
     </div>
   </footer>
 
