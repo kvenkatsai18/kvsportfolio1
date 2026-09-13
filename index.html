@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
+  <!-- NAV -->
   <header class="site-header" id="home">
     <div class="container">
       <div class="header-inner">
@@ -27,13 +27,9 @@
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div style="display:flex;gap:0.75rem;align-items:center;flex-shrink:0;">
-          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-            <span id="themeLabel">Theme</span>
-          </button>
-          <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
-        </div>
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
   </header>
@@ -42,56 +38,61 @@
 
     <!-- HERO -->
     <section class="hero" id="hero">
-      <div class="hero-inner">
-        <div class="hero-left">
-          <p class="hero-eyebrow">Founder &amp; Innovator</p>
-          <h1>Building products that <span class="accent">matter</span>.</h1>
-          <p>Founder of OurBuddy &mdash; a privacy-first carpooling platform. Web Design &amp; Developer Specialist at MoneyBot LLC. Currently shaping the future of financial literacy for high school students.</p>
-          <div class="hero-buttons">
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="hero-eyebrow">Founder &amp; Innovator</p>
+            <h1>Building products that <span class="accent">matter.</span></h1>
+            <p>Founder of OurBuddy &mdash; a privacy-first carpooling platform. Web Design &amp; Developer Specialist at MoneyBot LLC. Shaping the future of financial literacy for high school students.</p>
+            <div class="hero-buttons">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+            </div>
           </div>
-        </div>
-        <div class="hero-right">
-          <div class="profile-wrap">
-            <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" />
+          <div class="hero-visual">
+            <div class="profile-card">
+              <div class="profile-img-wrap">
+                <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" />
+              </div>
+              <h2>Venkat Sai Kolli</h2>
+              <p class="role">Founder &amp; Developer</p>
+              <div class="profile-links">
+                <a class="btn btn-primary" href="#contact">Say Hello</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="section" id="about">
+    <section class="section section--subtle" id="about">
       <div class="container">
         <div class="about-grid">
           <div class="about-text reveal">
             <p class="section-label">About</p>
+            <h2 class="section-title">Who I Am</h2>
             <p>I&rsquo;m an F-1 international student founder and creator of <strong>OurBuddy</strong> &mdash; a privacy-first community platform for short-distance carpooling and accommodation connections.</p>
-            <p>As the solo founder and developer, I built the entire MVP from scratch using Flutter and Firebase, launched it on the App Store in early 2025, and am actively marketing and iterating based on user feedback. The app features 24-hour auto-deleting chats, personal information masking, location-based SOS alerts, and in-app moderation.</p>
+            <p>As the solo founder and developer, I built the entire MVP from scratch using Flutter and Firebase, launched it on the App Store in early 2025, and am actively iterating based on user feedback. The app features 24-hour auto-deleting chats, personal information masking, location-based SOS alerts, and in-app moderation.</p>
             <p>Currently serving as <strong>Web Design &amp; Developer Specialist at MoneyBot LLC</strong>, while mentoring at Startup Weekend Louisville and contributing to the broader startup ecosystem.</p>
-            <div class="about-links">
-              <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener">
-                LinkedIn
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-            </div>
           </div>
-          <div class="about-sidebar reveal">
-            <div class="info-card">
-              <p class="label">Location</p>
-              <p class="value">United States (Denver/Louisville)</p>
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <p class="stat-label">Location</p>
+              <p class="stat-value">United States (Denver/Louisville area)</p>
             </div>
-            <div class="info-card">
-              <p class="label">Current Focus</p>
-              <p class="value">OurBuddy + MoneyBot</p>
+            <div class="stat-card">
+              <p class="stat-label">Current Focus</p>
+              <p class="stat-value">OurBuddy + MoneyBot</p>
             </div>
-            <div class="info-card">
-              <p class="label">Education</p>
-              <p class="value">MS IT (University of Denver), BTech IT (BVRIT)</p>
+            <div class="stat-card">
+              <p class="stat-label">Education</p>
+              <p class="stat-value">MS IT (University of Denver)</p>
             </div>
-            <div class="info-card">
-              <p class="label">Recognition</p>
-              <p class="value">Mentor @ Startup Weekend Louisville, TiE Denver</p>
+            <div class="stat-card">
+              <p class="stat-label">Recognition</p>
+              <p class="stat-value">Mentor @ Startup Weekend Louisville</p>
             </div>
           </div>
         </div>
@@ -108,33 +109,42 @@
         </div>
         <div class="projects-grid">
           <article class="project-card reveal">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <h3>OurBuddy App</h3>
             <p>Privacy-first community platform for short-distance carpooling and accommodation connections. Built with Flutter &amp; Firebase, launched on App Store in 2025.</p>
             <p class="highlight">24-hr auto-delete chats &middot; Personal info masking &middot; SOS alerts &middot; Content moderation</p>
-            <p class="status-line">Status: Actively growing &middot; Patent: Filed Oct 2025</p>
+            <p class="status">Status: Actively growing &middot; Patent: Filed Oct 2025</p>
             <a href="https://www.ourbapp.com/" target="_blank" rel="noopener">
               Visit OurBuddy
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
           <article class="project-card reveal">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
             <h3>IIW7 Website</h3>
             <p>7th International Indentation Workshop &mdash; comprehensive Wix website for 250+ international attendees with integrated payment, registration, and event management.</p>
             <p class="highlight">20,483% increase in Google organic search traffic</p>
-            <p class="status-line">Mobile-responsive &middot; SEO-optimized &middot; 300+ registrations processed</p>
+            <p class="status">Mobile-responsive &middot; SEO-optimized &middot; 300+ registrations processed</p>
             <a href="#">
               View Project
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
           <article class="project-card reveal">
+            <div class="project-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
             <h3>MoneyBot LLC</h3>
             <p>AI-powered financial literacy platform for high school students combining gamification and real-world skills.</p>
             <p class="highlight">Named &ldquo;Startups to Watch &ndash; 2026&rdquo; by Louisville Business First</p>
-            <p class="status-line">Role: Web Design &amp; Developer Specialist</p>
+            <p class="status">Role: Web Design &amp; Developer Specialist</p>
             <a href="https://getmoneybot.com" target="_blank" rel="noopener">
               Visit MoneyBot
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
         </div>
@@ -142,7 +152,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="section" id="skills">
+    <section class="section section--subtle" id="skills">
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">Expertise</p>
@@ -210,7 +220,7 @@
             <h3>WordPress Developer</h3>
             <p class="company">Vipassana Meditation Centre Dharamshala</p>
             <p class="date">May 2024 &ndash; Aug 2025 &middot; 1 yr 4 mos &middot; Remote</p>
-            <p>Developed and improved Vipassana organization&rsquo;s website, implementing design updates and enhancing user experience.</p>
+            <p>Developed and improved the organization&rsquo;s website, implementing design updates and enhancing user experience.</p>
           </div>
           <div class="timeline-item">
             <h3>Founder, CEO</h3>
@@ -223,7 +233,7 @@
     </section>
 
     <!-- EDUCATION -->
-    <section class="section" id="education">
+    <section class="section section--subtle" id="education">
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">Background</p>
@@ -300,7 +310,7 @@
             </div>
             <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5556881" target="_blank" rel="noopener">
               Read on SSRN
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
           <article class="pub-card reveal">
@@ -309,7 +319,7 @@
               <p class="pub-date">Oct 5, 2025</p>
             </div>
             <p class="pub-source">Published on Illumination</p>
-            <p class="pub-desc">A practical guide exploring the considerations and security implications of uploading data to AI systems. Raises awareness about privacy risks and best practices for protecting sensitive information.</p>
+            <p class="pub-desc">A practical guide exploring the security implications of uploading data to AI systems. Raises awareness about privacy risks and best practices for protecting sensitive information.</p>
             <div class="key-topics">
               <ul>
                 <li>AI Privacy &amp; Security</li>
@@ -320,7 +330,7 @@
             </div>
             <a href="https://medium.com/illumination/think-before-you-upload-to-ai-staying-safe-in-the-age-of-ai-d78d0746acf7" target="_blank" rel="noopener">
               Read on Medium
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
         </div>
@@ -328,7 +338,7 @@
     </section>
 
     <!-- PODCAST -->
-    <section class="section" id="podcast">
+    <section class="section section--subtle" id="podcast">
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">Media</p>
@@ -339,8 +349,8 @@
             <a href="https://youtu.be/ImqFHYlikh4" target="_blank" rel="noopener" class="podcast-thumb">
               <img src="https://img.youtube.com/vi/ImqFHYlikh4/maxresdefault.jpg" alt="Startup Journey While on OPT" loading="lazy" />
               <div class="play-btn">
-                <div class="play-btn-inner">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <div class="play-circle">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 </div>
               </div>
             </a>
@@ -354,8 +364,8 @@
             <a href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC" target="_blank" rel="noopener" class="podcast-thumb">
               <img src="https://media.licdn.com/media-proxy/ext?w=800&h=450&f=pjpg&hash=8sE5gfXrT3zPp8yZXpVn2X123" alt="The Startup Kitchen Show Episode 007" loading="lazy" />
               <div class="play-btn">
-                <div class="play-btn-inner">
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <div class="play-circle">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
                 </div>
               </div>
             </a>
@@ -396,7 +406,7 @@
     </section>
 
     <!-- MEDIA -->
-    <section class="section" id="media">
+    <section class="section section--subtle" id="media">
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">Press</p>
@@ -423,7 +433,7 @@
     </section>
 
     <!-- FOOTER CTA -->
-    <section class="footer-cta section">
+    <section class="footer-cta">
       <div class="container reveal">
         <h2>Let&rsquo;s build something <span style="color:var(--accent)">great</span>.</h2>
         <p>Interested in collaboration, mentoring, or just want to chat about startups?</p>
@@ -446,7 +456,7 @@
             </div>
             <div class="contact-card">
               <h3>Connect &amp; Follow</h3>
-              <p>Catch my latest updates and insights on startups, tech, and entrepreneurship.</p>
+              <p>Catch my latest updates on startups, tech, and entrepreneurship.</p>
               <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener" style="margin-top:0.75rem;">LinkedIn Profile</a>
             </div>
             <div class="contact-card">
