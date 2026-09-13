@@ -1176,6 +1176,56 @@ body {
   min-height: 1.2rem;
 }
 
+/* --- WORK WITH ME --- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.work-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  transition: all 0.25s var(--transition);
+}
+
+.work-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.work-card-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--accent-light);
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.work-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.work-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
 /* --- FOOTER CTA --- */
 .footer-cta {
   padding: 5rem 0;
