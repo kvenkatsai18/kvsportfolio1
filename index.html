@@ -19,15 +19,16 @@
           <ul class="nav-menu" id="navMenu">
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
             <li><a href="#publications">Publications</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#podcast">Podcast</a></li>
             <li><a href="#speaking">Speaking</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#work">Collaborate</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
@@ -46,20 +47,12 @@
             <p>Founder of OurBuddy &mdash; a privacy-first carpooling platform. Web Design &amp; Developer Specialist at MoneyBot LLC. Shaping the future of financial literacy for high school students.</p>
             <div class="hero-buttons">
               <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+              <a class="btn btn-ghost" href="#contact">Reach Out</a>
             </div>
           </div>
           <div class="hero-visual">
-            <div class="profile-card">
-              <div class="profile-img-wrap">
-                <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" />
-              </div>
-              <h2>Venkat Sai Kolli</h2>
-              <p class="role">Founder &amp; Developer</p>
-              <div class="profile-links">
-                <a class="btn btn-primary" href="#contact">Say Hello</a>
-                <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener">LinkedIn</a>
-              </div>
+            <div class="profile-image">
+              <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" />
             </div>
           </div>
         </div>
@@ -110,7 +103,7 @@
         <div class="projects-grid">
           <article class="project-card reveal">
             <div class="project-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <img src="https://images.squarespace-cdn.com/content/6771d396b35b2610c60a3f4c/841b5a71-2290-48cd-9d21-13415378a39c/OURB.png?format=100w&amp;content-type=image%2Fpng" alt="OurBuddy logo" loading="lazy" />
             </div>
             <h3>OurBuddy App</h3>
             <p>Privacy-first community platform for short-distance carpooling and accommodation connections. Built with Flutter &amp; Firebase, launched on App Store in 2025.</p>
@@ -136,151 +129,17 @@
           </article>
           <article class="project-card reveal">
             <div class="project-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <img src="https://getmoneybot.com/moneybot-logo.png" alt="MoneyBot logo" loading="lazy" />
             </div>
             <h3>MoneyBot LLC</h3>
             <p>AI-powered financial literacy platform for high school students combining gamification and real-world skills.</p>
             <p class="highlight">Named &ldquo;Startups to Watch &ndash; 2026&rdquo; by Louisville Business First</p>
-            <p class="status">Role: Web Design &amp; Developer Specialist</p>
+            <p class="status">Role: Founding Team Member</p>
             <a href="https://getmoneybot.com" target="_blank" rel="noopener">
               Visit MoneyBot
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section section--subtle" id="skills">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Expertise</p>
-          <h2 class="section-title">Skills &amp; Tools</h2>
-        </div>
-        <div class="skills-groups">
-          <div class="skill-group reveal">
-            <h3>Product &amp; Design</h3>
-            <div class="tags">
-              <span>Figma</span>
-              <span>UI/UX Design</span>
-              <span>User Research</span>
-              <span>Wireframing</span>
-              <span>Product Management</span>
-              <span>Prototyping</span>
-            </div>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Development</h3>
-            <div class="tags">
-              <span>Flutter</span>
-              <span>Firebase</span>
-              <span>HTML5</span>
-              <span>WordPress</span>
-              <span>Wix</span>
-              <span>GoDaddy</span>
-            </div>
-          </div>
-          <div class="skill-group reveal">
-            <h3>Startup &amp; Leadership</h3>
-            <div class="tags">
-              <span>Founder/CEO</span>
-              <span>Project Management</span>
-              <span>Team Leadership</span>
-              <span>Public Speaking</span>
-              <span>Build in Public</span>
-              <span>Mentoring</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Career</p>
-          <h2 class="section-title">Experience</h2>
-        </div>
-        <div class="timeline reveal">
-          <div class="timeline-item">
-            <h3>Web Design &amp; Developer Specialist</h3>
-            <p class="company">MoneyBot LLC</p>
-            <p class="date">Dec 2025 &ndash; Present &middot; 5 months &middot; Kentucky, United States (Hybrid)</p>
-            <p>Building financial education platform for high school students using AI-powered learning and gamification.</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Founder, CEO</h3>
-            <p class="company">OurBuddy (Newtab Technologies LLC)</p>
-            <p class="date">Jan &ndash; Dec 2025 &middot; 1 year &middot; Denver, Colorado (Remote)</p>
-            <p>Led creation of user flows, wireframes, and UI/UX prototypes. Managed cross-functional teams and coordinated stakeholder collaboration.</p>
-          </div>
-          <div class="timeline-item">
-            <h3>WordPress Developer</h3>
-            <p class="company">Vipassana Meditation Centre Dharamshala</p>
-            <p class="date">May 2024 &ndash; Aug 2025 &middot; 1 yr 4 mos &middot; Remote</p>
-            <p>Developed and improved the organization&rsquo;s website, implementing design updates and enhancing user experience.</p>
-          </div>
-          <div class="timeline-item">
-            <h3>Founder, CEO</h3>
-            <p class="company">Newtab Technologies</p>
-            <p class="date">Mar 2020 &ndash; Mar 2024 &middot; 4 years 1 month &middot; Hyderabad, India</p>
-            <p>Founded and led startup focused on startup leadership, user experience design, and product development.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="section section--subtle" id="education">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Background</p>
-          <h2 class="section-title">Education</h2>
-        </div>
-        <div class="education-grid reveal">
-          <div class="edu-card">
-            <div class="edu-header">
-              <h3>Master of Science</h3>
-              <p class="edu-date">Mar 2023 &ndash; Nov 2024</p>
-            </div>
-            <p class="degree">Information Technology</p>
-            <p class="school">University of Denver</p>
-            <div class="specs">
-              <ul>
-                <li>Web Design &amp; Development</li>
-                <li>UI/UX Design</li>
-                <li>Product Development</li>
-              </ul>
-            </div>
-          </div>
-          <div class="edu-card">
-            <div class="edu-header">
-              <h3>Bachelor of Technology</h3>
-              <p class="edu-date">2018 &ndash; 2022</p>
-            </div>
-            <p class="degree">Information Technology</p>
-            <p class="school">BV Raju Institute of Technology (BVRIT), Hyderabad</p>
-            <div class="specs">
-              <ul>
-                <li>Hyderabad, Telangana, India</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="certs-section reveal">
-          <h3>Professional Certifications</h3>
-          <div class="certs-grid">
-            <div class="cert-card">
-              <p class="cert-name">Google: Foundations of UX Design</p>
-              <p class="cert-date">Apr 2024</p>
-            </div>
-            <div class="cert-card">
-              <p class="cert-name">Udemy: Machine Learning for Absolute Beginners</p>
-              <p class="cert-date">May 2020</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -333,6 +192,29 @@
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
             </a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="testimonials-heading">
+            <div>
+              <p class="section-label">Testimonials</p>
+              <h2 class="section-title">Kind words from good people.</h2>
+            </div>
+            <div class="testimonial-actions">
+              <a class="btn testimonial-share" href="https://forms.gle/8mBCcX6QFXVdPpMT8" target="_blank" rel="noopener">Share feedback <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <p class="section-desc">A few thoughtful notes from people I&rsquo;ve had the chance to build, learn, and grow with. <span class="testimonial-scroll-hint">Scroll to explore&nbsp;→</span></p>
+        </div>
+        <div class="testimonial-carousel">
+          <button class="testimonial-nav-btn" type="button" data-testimonial-direction="prev" aria-label="Previous testimonials">←</button>
+          <div class="testimonial-track" id="testimonialTrack" aria-live="polite" aria-label="Testimonials"></div>
+          <button class="testimonial-nav-btn" type="button" data-testimonial-direction="next" aria-label="Next testimonials">→</button>
         </div>
       </div>
     </section>
@@ -405,43 +287,6 @@
       </div>
     </section>
 
-    <!-- WORK WITH ME -->
-    <section class="section" id="work">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Opportunities</p>
-          <h2 class="section-title">Work With Me</h2>
-          <p class="section-desc">Open to podcast appearances, speaking, consulting, and advisory work. Let's connect.</p>
-        </div>
-        <div class="work-grid">
-          <article class="work-card reveal">
-            <div class="work-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
-            </div>
-            <h3>Invite Me to Speak</h3>
-            <p>I enjoy speaking on podcasts and at conferences, as long as it&rsquo;s the right fit. Submit details about your event and let&rsquo;s connect.</p>
-            <a class="btn btn-primary" href="#">Submit an Invite</a>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Book a 1-on-1 Consult</h3>
-            <p>Need advice on your startup, product, or career? Let&rsquo;s chat one-on-one.</p>
-            <a class="btn btn-primary" href="#">Book a Consult</a>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
-            <h3>Hire Me for Advisory</h3>
-            <p>I currently advise startups in America on community-building, marketing, and hosting in-person events. Email me with details about your company and needs.</p>
-            <a class="btn btn-ghost" href="mailto:kollivenkatsai1802@gmail.com">Email Me — kollivenkatsai1802@gmail.com</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- MEDIA -->
     <section class="section section--subtle" id="media">
       <div class="container">
@@ -454,17 +299,23 @@
             <img src="Thumbnail.png" alt="MoneyBot WNKY Media Coverage" loading="lazy" />
             <span class="media-badge">News</span>
           </a>
-          <div class="media-meta">
-            <img src="wnky.jpeg" alt="WNKY 40" />
-            <span class="media-source">WNKY 40</span>
+          <div class="media-content">
+            <div class="media-copy">
+              <div class="media-meta">
+                <img src="wnky.jpeg" alt="WNKY 40" />
+                <span class="media-source">WNKY 40</span>
+              </div>
+              <h3>MoneyBot Enters Classrooms Around the Region</h3>
+              <p class="media-desc">WNKY News 40 coverage featuring MoneyBot LLC&rsquo;s initiative to bring financial literacy education to classrooms across the region.</p>
+            </div>
+            <div class="media-proof">
+              <div class="media-quote">
+                <blockquote>&ldquo;Millions of students are graduating without knowing what financial education is like, what assets are, what liabilities. Now, we are kind of giving them financial education, which I think is very important for students to live a better life.&rdquo;</blockquote>
+                <cite>&mdash; Venkat Sai Kolli, Web Design &amp; Developer Specialist at MoneyBot LLC</cite>
+              </div>
+              <a class="btn btn-ghost" href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" target="_blank" rel="noopener">Watch Video &amp; Read Article</a>
+            </div>
           </div>
-          <h3>MoneyBot Enters Classrooms Around the Region</h3>
-          <p class="media-desc">WNKY News 40 coverage featuring MoneyBot LLC&rsquo;s initiative to bring financial literacy education to classrooms across the region.</p>
-          <div class="media-quote">
-            <blockquote>&ldquo;Millions of students are graduating without knowing what financial education is like, what assets are, what liabilities. Now, we are kind of giving them financial education, which I think is very important for students to live a better life.&rdquo;</blockquote>
-            <cite>&mdash; Venkat Sai Kolli, Web Design &amp; Developer Specialist at MoneyBot LLC</cite>
-          </div>
-          <a class="btn btn-ghost" href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" target="_blank" rel="noopener">Watch Video &amp; Read Article</a>
         </div>
       </div>
     </section>
@@ -474,7 +325,7 @@
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">Opportunities</p>
-          <h2 class="section-title">How to Work With Me</h2>
+          <h2 class="section-title">Ways to Collaborate</h2>
         </div>
         <div class="work-grid">
           <article class="work-card reveal">
@@ -499,18 +350,9 @@
             </div>
             <h3>Hire Me for Advisory</h3>
             <p>Looking for guidance on community-building, marketing, or hosting events? Let&rsquo;s talk.</p>
-            <a class="btn btn-ghost" href="#">Get in Touch</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- FOOTER CTA -->
-    <section class="footer-cta">
-      <div class="container reveal">
-        <h2>Let&rsquo;s build something <span style="color:var(--accent)">great</span>.</h2>
-        <p>Interested in collaboration, mentoring, or just want to chat about startups?</p>
-        <a class="btn btn-primary" href="#contact">Get in Touch</a>
       </div>
     </section>
 
@@ -518,8 +360,8 @@
     <section class="section" id="contact">
       <div class="container">
         <div class="section-header reveal">
-          <p class="section-label">Connect</p>
-          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Let&rsquo;s Work Together</h2>
         </div>
         <div class="contact-grid">
           <div class="contact-cards reveal">
@@ -528,7 +370,7 @@
               <p>I&rsquo;m always open to discussing new projects, startup ideas, and opportunities. Feel free to reach out.</p>
             </div>
             <div class="contact-card">
-              <h3>Connect &amp; Follow</h3>
+              <h3>Follow Along</h3>
               <p>Catch my latest updates on startups, tech, and entrepreneurship.</p>
               <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener" style="margin-top:0.75rem;">LinkedIn Profile</a>
             </div>
@@ -570,6 +412,7 @@
     </div>
   </footer>
 
+  <script src="testimonials-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
