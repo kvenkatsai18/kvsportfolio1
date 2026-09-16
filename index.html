@@ -3,416 +3,1229 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Venkat Sai Kolli</title>
-  <meta name="description" content="Founder & CEO @OurBuddy | Web Design & Developer Specialist @ MoneyBot LLC | Tech Innovator, Speaker" />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <title>SURFACE 2026 | Symposium on Research &amp; Future Applications of Surface Modifications</title>
+  <meta name="description" content="SURFACE 2026 - First-of-its-kind symposium on surface modification. December 17th-18th, 2026 at University of Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <header class="site-header" id="home">
-    <div class="container">
-      <div class="header-inner">
-        <a href="#home" class="logo">Venkat Sai.</a>
-        <nav>
-          <ul class="nav-menu" id="navMenu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#podcast">Podcast</a></li>
-            <li><a href="#speaking">Speaking</a></li>
-            <li><a href="#media">Media</a></li>
-            <li><a href="#work">Collaborate</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="6" fill="#1e3a5f"/>
+          <path d="M6 22 L16 10 L26 22" stroke="#d4a843" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11 22 L16 15 L21 22" stroke="#d4a843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+        </svg>
+        <span>SURFACE <strong>2026</strong></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M3 6h16M3 11h16M3 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#patrons" class="nav-link">Patrons</a></li>
+        <li><a href="#sessions" class="nav-link">Sessions</a></li>
+        <li><a href="#speakers" class="nav-link">Speakers</a></li>
+        <li><a href="#dates" class="nav-link">Dates</a></li>
+        <li><a href="#registration" class="nav-link">Register</a></li>
+        <li><a href="#sponsorship" class="nav-link">Sponsor</a></li>
+        <li><a href="#venue" class="nav-link">Venue</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <circle cx="7" cy="7" r="6" stroke="#d4a843" stroke-width="1.5"/>
+          <path d="M7 4v3.5l2 1.5" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        December 17–18, 2026
+      </div>
+      <h1 class="hero-title">SURFACE 2026</h1>
+      <p class="hero-subtitle">Symposium on Research &amp; Future Applications<br>of Surface Modifications</p>
+      <p class="hero-tagline">First-of-its-kind symposium on surface modification</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+            <path d="M9 1.5C6 1.5 3.5 4 3.5 7c0 4.5 5.5 9.5 5.5 9.5s5.5-5 5.5-9.5c0-3-2.5-5.5-5.5-5.5z" stroke="#d4a843" stroke-width="1.5"/>
+            <circle cx="9" cy="7" r="1.75" stroke="#d4a843" stroke-width="1.5"/>
+          </svg>
+          School of Engineering Sciences and Technology<br>University of Hyderabad
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#registration" class="btn btn-primary">Register Now</a>
+        <a href="#abstract" class="btn btn-outline">Submit Abstract</a>
       </div>
     </div>
-  </header>
+    <div class="hero-scroll-hint">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M10 4v12M5 11l5 5 5-5" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </section>
 
-  <main>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-content">
-            <p class="hero-eyebrow">Founder &amp; Innovator</p>
-            <h1>Building products that <span class="accent">matter.</span></h1>
-            <p>Founder of OurBuddy &mdash; a privacy-first carpooling platform. Web Design &amp; Developer Specialist at MoneyBot LLC. Shaping the future of financial literacy for high school students.</p>
-            <div class="hero-buttons">
-              <a class="btn btn-primary" href="#projects">View Projects</a>
-              <a class="btn btn-ghost" href="#contact">Reach Out</a>
-            </div>
-          </div>
-          <div class="hero-visual">
-            <div class="profile-image">
-              <img src="ProfilePic.jpeg" alt="Venkat Sai Kolli" />
-            </div>
-          </div>
-        </div>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Overview</span>
+        <h2 class="section-title">About SURFACE 2026</h2>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section section--subtle" id="about">
-      <div class="container">
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p class="section-label">About</p>
-            <h2 class="section-title">Who I Am</h2>
-            <p>I&rsquo;m an F-1 international student founder and creator of <strong>OurBuddy</strong> &mdash; a privacy-first community platform for short-distance carpooling and accommodation connections.</p>
-            <p>As the solo founder and developer, I built the entire MVP from scratch using Flutter and Firebase, launched it on the App Store in early 2025, and am actively iterating based on user feedback. The app features 24-hour auto-deleting chats, personal information masking, location-based SOS alerts, and in-app moderation.</p>
-            <p>Currently serving as <strong>Web Design &amp; Developer Specialist at MoneyBot LLC</strong>, while mentoring at Startup Weekend Louisville and contributing to the broader startup ecosystem.</p>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>The <strong>SURFACE 2026 — Symposium on Research &amp; Future Applications of Surface Modifications</strong> is a premier two-day academic event dedicated to advancing the science and engineering of surface modification technologies.</p>
+          <p>Organized by the <strong>Institute of Centre for Lipid Science and Green Propulsion (CLSP)</strong> at the University of Hyderabad, this symposium brings together leading researchers, academicians, scientists, and industry professionals to discuss the latest developments in surface modification across materials science, physics, chemistry, biology, and engineering.</p>
+          <p>As a first-of-its-kind symposium focused entirely on surface modification, SURFACE 2026 aims to bridge the gap between fundamental research and real-world applications — spanning aerospace materials, biomedical implants, energy systems, corrosion protection, and smart functional coatings.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Thematic Tracks</span>
           </div>
-          <div class="about-stats reveal">
-            <div class="stat-card">
-              <p class="stat-label">Location</p>
-              <p class="stat-value">United States (Denver/Louisville area)</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-label">Current Focus</p>
-              <p class="stat-value">OurBuddy + MoneyBot</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-label">Education</p>
-              <p class="stat-value">MS IT (University of Denver)</p>
-            </div>
-            <div class="stat-card">
-              <p class="stat-label">Recognition</p>
-              <p class="stat-value">Mentor @ Startup Weekend Louisville</p>
-            </div>
+          <div class="stat-card">
+            <span class="stat-number">2</span>
+            <span class="stat-label">Days of Science</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">30+</span>
+            <span class="stat-label">Expert Speakers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">200+</span>
+            <span class="stat-label">Expected Delegates</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Featured Work</p>
-          <h2 class="section-title">Selected Projects</h2>
-          <p class="section-desc">Products and platforms built from scratch, shipped, and iterated on with real users.</p>
+  <!-- PATRONS & ORGANIZERS -->
+  <section class="section section-alt" id="patrons">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Leadership</span>
+        <h2 class="section-title">Patrons &amp; Organizers</h2>
+      </div>
+      <div class="patrons-grid reveal">
+
+        <div class="patron-card">
+          <h3 class="patron-category">Chief Patron</h3>
+          <ul class="patron-list">
+            <li>
+              <div class="patron-avatar patron-avatar-navy">VP</div>
+              <div class="patron-info">
+                <strong>Prof. Vipin K. Pillai</strong>
+                <span>Vice-Chancellor, University of Hyderabad</span>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <div class="project-icon">
-              <img src="https://images.squarespace-cdn.com/content/6771d396b35b2610c60a3f4c/841b5a71-2290-48cd-9d21-13415378a39c/OURB.png?format=100w&amp;content-type=image%2Fpng" alt="OurBuddy logo" loading="lazy" />
+
+        <div class="patron-card">
+          <h3 class="patron-category">Patron</h3>
+          <ul class="patron-list">
+            <li>
+              <div class="patron-avatar patron-avatar-navy">RK</div>
+              <div class="patron-info">
+                <strong>Prof. R. K. Garan</strong>
+                <span>Director, School of Engineering Sciences and Technology (SEST)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="patron-card">
+          <h3 class="patron-category">Conference Chair</h3>
+          <ul class="patron-list">
+            <li>
+              <div class="patron-avatar patron-avatar-gold">JG</div>
+              <div class="patron-info">
+                <strong>Dr. Jai Gautam</strong>
+                <span>Associate Professor, Dept. of Chemistry &amp; Coordinator, CLSP</span>
+              </div>
+            </li>
+            <li>
+              <div class="patron-avatar patron-avatar-gold">VC</div>
+              <div class="patron-info">
+                <strong>Dr. Viswanath Chinthapenta</strong>
+                <span>Associate Professor, Dept. of Mechanical Engineering &amp; Coordinator, CLSP</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="patron-card">
+          <h3 class="patron-category">Organizing Secretary</h3>
+          <ul class="patron-list">
+            <li>
+              <div class="patron-avatar patron-avatar-navy">GA</div>
+              <div class="patron-info">
+                <strong>Dr. Gagana Ananda</strong>
+                <span>Assistant Professor, Dept. of Chemistry &amp; Secretary, CLSP</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="patron-card">
+          <h3 class="patron-category">Co-Organizers</h3>
+          <ul class="patron-list">
+            <li>
+              <div class="patron-avatar patron-avatar-navy">SS</div>
+              <div class="patron-info">
+                <strong>Dr. S. S. K. Sastry</strong>
+                <span>Professor, Dept. of Physics</span>
+              </div>
+            </li>
+            <li>
+              <div class="patron-avatar patron-avatar-navy">KG</div>
+              <div class="patron-info">
+                <strong>Dr. K. B. Gopal</strong>
+                <span>Professor, Dept. of Mechanical Engineering</span>
+              </div>
+            </li>
+            <li>
+              <div class="patron-avatar patron-avatar-navy">AK</div>
+              <div class="patron-info">
+                <strong>Dr. Anil K. Kondapi</strong>
+                <span>Professor, Dept. of Biotechnology &amp; Bioinformatics</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="patron-card">
+          <h3 class="patron-category">Technical Advisory Committee</h3>
+          <ul class="patron-list">
+            <li>
+              <div class="patron-avatar patron-avatar-outline">DP</div>
+              <div class="patron-info">
+                <strong>Dr. D. P. Chatterjee</strong>
+                <span>Dept. of Chemistry, IIT Kharagpur</span>
+              </div>
+            </li>
+            <li>
+              <div class="patron-avatar patron-avatar-outline">SK</div>
+              <div class="patron-info">
+                <strong>Dr. S. K. Nanda</strong>
+                <span>Director, NIT Rourkela</span>
+              </div>
+            </li>
+            <li>
+              <div class="patron-avatar patron-avatar-outline">SR</div>
+              <div class="patron-info">
+                <strong>Dr. S. Ranade</strong>
+                <span>Professor, UNSW Sydney</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="patron-card patron-card-wide">
+          <h3 class="patron-category">Organizing Committee</h3>
+          <div class="committee-grid">
+            <div class="committee-item"><strong>Dr. Chandan Singh</strong> <span>– NIT Jamshedpur</span></div>
+            <div class="committee-item"><strong>Dr. C. V. Rao</strong> <span>– ISRO HQ, Bengaluru</span></div>
+            <div class="committee-item"><strong>Dr. Susmita D.</strong> <span>– CGCRI, Kolkata</span></div>
+            <div class="committee-item"><strong>Dr. R. R. Sinha</strong> <span>– CGCRI, Kolkata</span></div>
+            <div class="committee-item"><strong>Dr. P. V. N. Kishore</strong> <span>– School of Physics, UoH</span></div>
+            <div class="committee-item"><strong>Dr. K. Venkatesh</strong> <span>– IICT, Hyderabad</span></div>
+            <div class="committee-item"><strong>Dr. N. N. G. Rao</strong> <span>– Dept. of Chemistry, UoH</span></div>
+            <div class="committee-item"><strong>Dr. S. K. J. Sastry</strong> <span>– CLSP, UoH</span></div>
+            <div class="committee-item"><strong>Dr. A. K. Kushwaha</strong> <span>– NIT Jalandhar</span></div>
+            <div class="committee-item"><strong>Dr. K. Ramachandra Rao</strong> <span>– Dept. of Mech. Engg., UoH</span></div>
+            <div class="committee-item"><strong>Dr. G. S. Vinod Kumar</strong> <span>– ISRO LPSC, Bengaluru</span></div>
+            <div class="committee-item"><strong>Dr. M. V. K. K. Sastry</strong> <span>– IICT, Hyderabad</span></div>
+            <div class="committee-item"><strong>Dr. G. P. S. S. Sastry</strong> <span>– Dept. of Physics, UoH</span></div>
+            <div class="committee-item"><strong>Dr. V. V. S. S. S. K. Raju</strong> <span>– NIT Goa</span></div>
+            <div class="committee-item"><strong>Dr. R. Subasri</strong> <span>– ARCI, Hyderabad</span></div>
+            <div class="committee-item"><strong>Dr. K. R. S. S. Sarma</strong> <span>– Dept. of Mech. Engg., UoH</span></div>
+            <div class="committee-item"><strong>Dr. P. K. Raju</strong> <span>– NIT Warangal</span></div>
+            <div class="committee-item"><strong>Dr. P. B. N. Murthy</strong> <span>– NAL, Bengaluru</span></div>
+            <div class="committee-item"><strong>Dr. K. Venkataraman</strong> <span>– Adjunct Faculty, CLSP, UoH</span></div>
+            <div class="committee-item"><strong>Dr. Anup K. Ghosh</strong> <span>– Delhi University</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THEMATIC SESSIONS -->
+  <section class="section" id="sessions">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Program</span>
+        <h2 class="section-title">Thematic Sessions</h2>
+        <p class="section-desc">Four focused tracks covering the breadth of surface modification science and engineering</p>
+      </div>
+      <div class="sessions-grid reveal">
+
+        <div class="session-card">
+          <div class="session-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="13" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M16 9v7l4 3" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="16" cy="16" r="3" fill="#d4a843" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="session-title">Track 1: Surface Engineering in Aerospace and Automotive</h3>
+          <ul class="session-topics">
+            <li>Thermal barrier coatings</li>
+            <li>Oxidation and corrosion-resistant coatings</li>
+            <li>Surface texturing for drag reduction</li>
+            <li>Functional coatings for extreme environments</li>
+            <li>Additive manufacturing surface modifications</li>
+          </ul>
+        </div>
+
+        <div class="session-card">
+          <div class="session-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M6 16 L16 6 L26 16 L16 26 Z" stroke="#d4a843" stroke-width="1.5" stroke-linejoin="round"/>
+              <circle cx="16" cy="16" r="4" fill="#d4a843" opacity="0.3"/>
+              <circle cx="16" cy="16" r="4" stroke="#d4a843" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="session-title">Track 2: Surface Chemistry and Nanomaterials</h3>
+          <ul class="session-topics">
+            <li>Self-assembled monolayers</li>
+            <li>Nanostructured coatings and nanocomposites</li>
+            <li>Plasma and ion-beam surface modifications</li>
+            <li>Green and sustainable surface chemistry</li>
+            <li>Molecular dynamics simulations</li>
+          </ul>
+        </div>
+
+        <div class="session-card">
+          <div class="session-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M8 24 C8 16 12 10 16 10 C20 10 24 16 24 24" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="16" cy="22" r="4" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M16 18v4" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="session-title">Track 3: Bio-Surface Modifications and Medical Devices</h3>
+          <ul class="session-topics">
+            <li>Biomaterial surface engineering</li>
+            <li>Antimicrobial and antibacterial coatings</li>
+            <li>Implant surface modifications</li>
+            <li>Bio-functionalization of materials</li>
+            <li>Drug delivery and biosensing surfaces</li>
+          </ul>
+        </div>
+
+        <div class="session-card">
+          <div class="session-icon">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect x="5" y="10" width="22" height="14" rx="2" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M11 10V7a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3" stroke="#d4a843" stroke-width="1.5"/>
+              <circle cx="16" cy="17" r="2.5" fill="#d4a843" opacity="0.4"/>
+              <circle cx="16" cy="17" r="2.5" stroke="#d4a843" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="session-title">Track 4: Smart Surfaces and Functional Coatings</h3>
+          <ul class="session-topics">
+            <li>Superhydrophobic and oleophobic surfaces</li>
+            <li>Self-healing coatings</li>
+            <li>Stimuli-responsive surfaces</li>
+            <li>Energy harvesting and piezoelectric surfaces</li>
+            <li>Advanced characterization techniques</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SPEAKERS -->
+  <section class="section section-alt" id="speakers">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Eminent Speakers</span>
+        <h2 class="section-title">Confirmed Speakers</h2>
+      </div>
+
+      <div class="speakers-block reveal">
+        <h3 class="speakers-block-title">National &amp; International Participants</h3>
+        <div class="speakers-grid">
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
             </div>
-            <h3>OurBuddy App</h3>
-            <p>Privacy-first community platform for short-distance carpooling and accommodation connections. Built with Flutter &amp; Firebase, launched on App Store in 2025.</p>
-            <p class="highlight">24-hr auto-delete chats &middot; Personal info masking &middot; SOS alerts &middot; Content moderation</p>
-            <p class="status">Status: Actively growing &middot; Patent: Filed Oct 2025</p>
-            <a href="https://www.ourbapp.com/" target="_blank" rel="noopener">
-              Visit OurBuddy
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-icon">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div class="speaker-info">
+              <strong>Dr. S. Ranade</strong>
+              <span>Professor, UNSW Sydney, Australia</span>
+              <span class="speaker-affiliation">International Speaker</span>
             </div>
-            <h3>IIW7 Website</h3>
-            <p>7th International Indentation Workshop &mdash; comprehensive Wix website for 250+ international attendees with integrated payment, registration, and event management.</p>
-            <p class="highlight">20,483% increase in Google organic search traffic</p>
-            <p class="status">Mobile-responsive &middot; SEO-optimized &middot; 300+ registrations processed</p>
-            <a href="#">
-              View Project
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-icon">
-              <img src="https://getmoneybot.com/moneybot-logo.png" alt="MoneyBot logo" loading="lazy" />
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
             </div>
-            <h3>MoneyBot LLC</h3>
-            <p>AI-powered financial literacy platform for high school students combining gamification and real-world skills.</p>
-            <p class="highlight">Named &ldquo;Startups to Watch &ndash; 2026&rdquo; by Louisville Business First</p>
-            <p class="status">Role: Founding Team Member</p>
-            <a href="https://getmoneybot.com" target="_blank" rel="noopener">
-              Visit MoneyBot
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
-          </article>
+            <div class="speaker-info">
+              <strong>Dr. R. K. Garan</strong>
+              <span>Director, SEST, University of Hyderabad</span>
+              <span class="speaker-affiliation">Patron</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#d4a843" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#d4a843" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. Jai Gautam</strong>
+              <span>Associate Professor, Dept. of Chemistry &amp; Coordinator, CLSP, UoH</span>
+              <span class="speaker-affiliation">Conference Chair</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#d4a843" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#d4a843" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. Viswanath Chinthapenta</strong>
+              <span>Associate Professor, Dept. of Mechanical Engineering &amp; Coordinator, CLSP, UoH</span>
+              <span class="speaker-affiliation">Conference Chair</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. D. P. Chatterjee</strong>
+              <span>Dept. of Chemistry, IIT Kharagpur</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. S. K. Nanda</strong>
+              <span>Director, NIT Rourkela</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. C. V. Rao</strong>
+              <span>ISRO HQ, Bengaluru</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. Susmita D.</strong>
+              <span>CGCRI, Kolkata</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. R. R. Sinha</strong>
+              <span>CGCRI, Kolkata</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. K. Venkatesh</strong>
+              <span>IICT, Hyderabad</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. N. N. G. Rao</strong>
+              <span>Dept. of Chemistry, University of Hyderabad</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. R. Subasri</strong>
+              <span>ARCI, Hyderabad</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. Anup K. Ghosh</strong>
+              <span>Delhi University</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. P. V. N. Kishore</strong>
+              <span>School of Physics, University of Hyderabad</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. K. Ramachandra Rao</strong>
+              <span>Dept. of Mechanical Engineering, UoH</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. G. S. Vinod Kumar</strong>
+              <span>ISRO LPSC, Bengaluru</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
+          <div class="speaker-card">
+            <div class="speaker-avatar">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+                <circle cx="18" cy="18" r="18" fill="#1e3a5f" opacity="0.15"/>
+                <circle cx="18" cy="13" r="6" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M6 30c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="speaker-info">
+              <strong>Dr. P. B. N. Murthy</strong>
+              <span>NAL, Bengaluru</span>
+              <span class="speaker-affiliation">Invited Speaker</span>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PUBLICATIONS -->
-    <section class="section" id="publications">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Research</p>
-          <h2 class="section-title">Publications</h2>
+  <!-- IMPORTANT DATES -->
+  <section class="section" id="dates">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Schedule</span>
+        <h2 class="section-title">Important Dates</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-date">15 Oct 2026</div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M8 4v4l2.5 2" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <strong>Abstract Submission Opens</strong>
+            <span>Submit your research abstracts for oral/poster presentation</span>
+          </div>
         </div>
-        <div class="pubs-grid">
-          <article class="pub-card reveal">
-            <div class="pub-header">
-              <h3>The Integration of AI into UI and UX Design</h3>
-              <p class="pub-date">Oct 29, 2025</p>
-            </div>
-            <p class="pub-source">Published on SSRN</p>
-            <p class="pub-desc">This study examines how Artificial Intelligence can be used to improve UI and UX design for increased usability, engagement, and trust. Identifies four recurring problems and reviews mitigation strategies.</p>
-            <div class="key-topics">
-              <ul>
-                <li>AI in Design Workflows</li>
-                <li>Explainability &amp; Privacy</li>
-                <li>Fairness &amp; Inclusivity</li>
-                <li>People-Centered Design</li>
-              </ul>
-            </div>
-            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5556881" target="_blank" rel="noopener">
-              Read on SSRN
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
-          </article>
-          <article class="pub-card reveal">
-            <div class="pub-header">
-              <h3>Think Before You Upload to AI: Staying Safe in the Age of AI</h3>
-              <p class="pub-date">Oct 5, 2025</p>
-            </div>
-            <p class="pub-source">Published on Illumination</p>
-            <p class="pub-desc">A practical guide exploring the security implications of uploading data to AI systems. Raises awareness about privacy risks and best practices for protecting sensitive information.</p>
-            <div class="key-topics">
-              <ul>
-                <li>AI Privacy &amp; Security</li>
-                <li>Data Protection</li>
-                <li>Risk Awareness</li>
-                <li>Safe AI Tool Usage</li>
-              </ul>
-            </div>
-            <a href="https://medium.com/illumination/think-before-you-upload-to-ai-staying-safe-in-the-age-of-ai-d78d0746acf7" target="_blank" rel="noopener">
-              Read on Medium
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
-          </article>
+        <div class="timeline-item">
+          <div class="timeline-date">30 Nov 2026</div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M8 4v4l2.5 2" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <strong>Abstract Submission Deadline</strong>
+            <span>Last date to submit abstracts — no extensions</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">07 Dec 2026</div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M8 4v4l2.5 2" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <strong>Notification of Acceptance</strong>
+            <span>Authors notified of abstract acceptance status</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">10 Dec 2026</div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M8 4v4l2.5 2" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <strong>Early Bird Registration Deadline</strong>
+            <span>Avail discounted early bird registration fees</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">14 Dec 2026</div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M8 4v4l2.5 2" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <strong>Registration Deadline</strong>
+            <span>Last date for standard registration</span>
+          </div>
+        </div>
+        <div class="timeline-item timeline-item-highlight">
+          <div class="timeline-date">17–18 Dec 2026</div>
+          <div class="timeline-marker">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" fill="#d4a843"/>
+              <path d="M8 4v4l2.5 2" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="timeline-content">
+            <strong>SURFACE 2026 Symposium</strong>
+            <span>Two days of research presentations, keynotes, and networking</span>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials-section" id="testimonials">
-      <div class="container">
-        <div class="section-header reveal">
-          <div class="testimonials-heading">
+  <!-- REGISTRATION -->
+  <section class="section section-alt" id="registration">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Join Us</span>
+        <h2 class="section-title">Registration</h2>
+        <p class="section-desc">Secure your spot at SURFACE 2026. Early bird rates available until December 10th.</p>
+      </div>
+      <div class="registration-grid reveal">
+        <div class="reg-card">
+          <div class="reg-card-header">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="12" stroke="#1e3a5f" stroke-width="1.5"/>
+              <path d="M14 8v6M14 18h.01" stroke="#1e3a5f" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>Student (Early Bird)</h3>
+          </div>
+          <div class="reg-amount">Rs. 1,000</div>
+          <p class="reg-note">Available until Dec 10, 2026</p>
+          <ul class="reg-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full conference access
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Poster/Oral presentation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Conference kit &amp; certificate
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lunch &amp; refreshments
+            </li>
+          </ul>
+        </div>
+
+        <div class="reg-card reg-card-featured">
+          <div class="reg-badge">Most Popular</div>
+          <div class="reg-card-header">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="12" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M9 14l3.5 3.5L19 9.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Faculty (Early Bird)</h3>
+          </div>
+          <div class="reg-amount">Rs. 2,500</div>
+          <p class="reg-note">Available until Dec 10, 2026</p>
+          <ul class="reg-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full conference access
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Poster/Oral presentation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Conference kit &amp; certificate
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lunch &amp; refreshments
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Networking dinner access
+            </li>
+          </ul>
+        </div>
+
+        <div class="reg-card">
+          <div class="reg-card-header">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="12" stroke="#1e3a5f" stroke-width="1.5"/>
+              <path d="M9 11h6M9 14h4M9 17h5" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Student (Standard)</h3>
+          </div>
+          <div class="reg-amount">Rs. 1,500</div>
+          <p class="reg-note">After Dec 10, 2026</p>
+          <ul class="reg-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full conference access
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Poster/Oral presentation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Conference kit &amp; certificate
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lunch &amp; refreshments
+            </li>
+          </ul>
+        </div>
+
+        <div class="reg-card">
+          <div class="reg-card-header">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true">
+              <circle cx="14" cy="14" r="12" stroke="#1e3a5f" stroke-width="1.5"/>
+              <path d="M9 11h6M9 14h4M9 17h5" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <h3>Faculty (Standard)</h3>
+          </div>
+          <div class="reg-amount">Rs. 3,000</div>
+          <p class="reg-note">After Dec 10, 2026</p>
+          <ul class="reg-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full conference access
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Poster/Oral presentation
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Conference kit &amp; certificate
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lunch &amp; refreshments
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#22c55e" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Networking dinner access
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="reg-cta reveal">
+        <a href="https://www.iclprp10.in/" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Register at iclprp10.in</a>
+        <span class="reg-cta-note">Registration closes December 14, 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPONSORSHIP -->
+  <section class="section" id="sponsorship">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Partners</span>
+        <h2 class="section-title">Sponsorship Opportunities</h2>
+        <p class="section-desc">Showcase your organization to 200+ researchers, engineers, and industry leaders in surface science</p>
+      </div>
+      <div class="sponsor-grid reveal">
+
+        <div class="sponsor-card sponsor-card-platinum">
+          <div class="sponsor-tier-badge">Platinum</div>
+          <h3 class="sponsor-name">Stall / Booth</h3>
+          <div class="sponsor-price">Rs. 50,000</div>
+          <p class="sponsor-desc">Premium exhibition space at the conference venue with maximum visibility</p>
+          <ul class="sponsor-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              6ft x 6ft exhibition stall
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Logo on conference website &amp; banners
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              2 complimentary registrations
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Catalogue/event kit distribution
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#d4a843" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Announced during inaugural session
+            </li>
+          </ul>
+        </div>
+
+        <div class="sponsor-card">
+          <h3 class="sponsor-name">Gold Sponsor</h3>
+          <div class="sponsor-price">Rs. 30,000</div>
+          <p class="sponsor-desc">Strong brand presence across all conference materials and sessions</p>
+          <ul class="sponsor-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Logo on website &amp; banners
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              1 complimentary registration
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Event kit distribution slot
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Mentioned during sessions
+            </li>
+          </ul>
+        </div>
+
+        <div class="sponsor-card">
+          <h3 class="sponsor-name">Silver Sponsor</h3>
+          <div class="sponsor-price">Rs. 15,000</div>
+          <p class="sponsor-desc">Visible brand association with the symposium</p>
+          <ul class="sponsor-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Logo on website
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              1 complimentary registration
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Lanyard / Badge sponsorship
+            </li>
+          </ul>
+        </div>
+
+        <div class="sponsor-card">
+          <h3 class="sponsor-name">Bronze Sponsor</h3>
+          <div class="sponsor-price">Rs. 8,000</div>
+          <p class="sponsor-desc">Entry-level sponsorship with essential brand visibility</p>
+          <ul class="sponsor-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Logo on website
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Conference kit inclusion
+            </li>
+          </ul>
+        </div>
+
+        <div class="sponsor-card">
+          <h3 class="sponsor-name">Abstract Book</h3>
+          <div class="sponsor-price">Rs. 20,000</div>
+          <p class="sponsor-desc">Exclusive branding inside the abstract compendium</p>
+          <ul class="sponsor-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full-page ad in abstract book
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Logo on back cover
+            </li>
+          </ul>
+        </div>
+
+        <div class="sponsor-card">
+          <h3 class="sponsor-name">Conference Kit Sponsor</h3>
+          <div class="sponsor-price">Rs. 10,000</div>
+          <p class="sponsor-desc">Brand your conference kit for lasting impression</p>
+          <ul class="sponsor-features">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Kit bag branding
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8l3.5 3.5L13 4.5" stroke="#1e3a5f" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Logo on kit insert
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE & TRAVEL -->
+  <section class="section section-alt" id="venue">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Getting Here</span>
+        <h2 class="section-title">Venue &amp; Travel</h2>
+      </div>
+      <div class="venue-grid reveal">
+        <div class="venue-info">
+          <div class="venue-address">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#1e3a5f" stroke-width="1.5"/>
+              <circle cx="12" cy="9" r="2.5" stroke="#1e3a5f" stroke-width="1.5"/>
+            </svg>
             <div>
-              <p class="section-label">Testimonials</p>
-              <h2 class="section-title">Kind words from good people.</h2>
-            </div>
-            <div class="testimonial-actions">
-              <a class="btn testimonial-share" href="https://forms.gle/8mBCcX6QFXVdPpMT8" target="_blank" rel="noopener">Share feedback <span aria-hidden="true">↗</span></a>
+              <strong>School of Engineering Sciences and Technology (SEST)</strong>
+              <span>University of Hyderabad<br>Gachi Bowli, Hyderabad — 500046<br>Telangana, India</span>
             </div>
           </div>
-          <p class="section-desc">A few thoughtful notes from people I&rsquo;ve had the chance to build, learn, and grow with. <span class="testimonial-scroll-hint">Scroll to explore&nbsp;→</span></p>
-        </div>
-        <div class="testimonial-carousel">
-          <button class="testimonial-nav-btn" type="button" data-testimonial-direction="prev" aria-label="Previous testimonials">←</button>
-          <div class="testimonial-track" id="testimonialTrack" aria-live="polite" aria-label="Testimonials"></div>
-          <button class="testimonial-nav-btn" type="button" data-testimonial-direction="next" aria-label="Next testimonials">→</button>
-        </div>
-      </div>
-    </section>
 
-    <!-- PODCAST -->
-    <section class="section section--subtle" id="podcast">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Media</p>
-          <h2 class="section-title">Podcast Appearances</h2>
-        </div>
-        <div class="podcast-grid">
-          <article class="podcast-card reveal">
-            <a href="https://youtu.be/ImqFHYlikh4" target="_blank" rel="noopener" class="podcast-thumb">
-              <img src="https://img.youtube.com/vi/ImqFHYlikh4/maxresdefault.jpg" alt="Startup Journey While on OPT" loading="lazy" />
-              <div class="play-btn">
-                <div class="play-circle">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                </div>
+          <div class="venue-transport">
+            <h3>How to Reach</h3>
+            <div class="transport-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <path d="M3 13.5V6A1.5 1.5 0 0 1 4.5 4.5h11A1.5 1.5 0 0 1 17 6v7.5" stroke="#1e3a5f" stroke-width="1.5"/>
+                <rect x="1.5" y="13.5" width="17" height="3" rx="1" stroke="#1e3a5f" stroke-width="1.5"/>
+                <circle cx="6.5" cy="17" r="1" fill="#1e3a5f"/>
+                <circle cx="13.5" cy="17" r="1" fill="#1e3a5f"/>
+              </svg>
+              <div>
+                <strong>From Rajiv Gandhi International Airport (RGIA)</strong>
+                <span>Approx. 25 km — 45 minutes by cab. Pre-paid taxis and app-based rides available.</span>
               </div>
-            </a>
-            <div class="podcast-info">
-              <h3>Startup Journey While on OPT</h3>
-              <p>Featured podcast discussion about startups, entrepreneurship, and building while on OPT visa status.</p>
-              <a class="btn btn-ghost" href="https://youtu.be/ImqFHYlikh4" target="_blank" rel="noopener">Watch on YouTube</a>
             </div>
-          </article>
-          <article class="podcast-card reveal">
-            <a href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC" target="_blank" rel="noopener" class="podcast-thumb">
-              <img src="https://media.licdn.com/media-proxy/ext?w=800&h=450&f=pjpg&hash=8sE5gfXrT3zPp8yZXpVn2X123" alt="The Startup Kitchen Show Episode 007" loading="lazy" />
-              <div class="play-btn">
-                <div class="play-circle">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                </div>
+            <div class="transport-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <rect x="1.5" y="7" width="17" height="10" rx="1" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M5 7V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2" stroke="#1e3a5f" stroke-width="1.5"/>
+                <circle cx="5.5" cy="17" r="1" fill="#1e3a5f"/>
+                <circle cx="14.5" cy="17" r="1" fill="#1e3a5f"/>
+                <path d="M5.5 12h9" stroke="#1e3a5f" stroke-width="1.5"/>
+              </svg>
+              <div>
+                <strong>From Hyderabad Deccan (Nampally) Railway Station</strong>
+                <span>Approx. 15 km — 30 minutes by cab or auto-rickshaw.</span>
               </div>
-            </a>
-            <div class="podcast-info">
-              <h3>The Startup Kitchen Show &ndash; Episode 007</h3>
-              <p>Discussion on building in public and the startup journey from India to the US.</p>
-              <a class="btn btn-ghost" href="https://www.linkedin.com/posts/ikniriley_the-startup-kitchen-show-007-w-ceo-of-activity-7399508814636408833-S7yC" target="_blank" rel="noopener">View on LinkedIn</a>
             </div>
-          </article>
+            <div class="transport-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <rect x="1.5" y="7" width="17" height="10" rx="1" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M5 7V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v2" stroke="#1e3a5f" stroke-width="1.5"/>
+                <circle cx="5.5" cy="17" r="1" fill="#1e3a5f"/>
+                <circle cx="14.5" cy="17" r="1" fill="#1e3a5f"/>
+                <path d="M5.5 12h9" stroke="#1e3a5f" stroke-width="1.5"/>
+              </svg>
+              <div>
+                <strong>From Secunderabad Railway Station</strong>
+                <span>Approx. 18 km — 35 minutes by cab. MMTS local train to Hi-Tech City station also available.</span>
+              </div>
+            </div>
+            <div class="transport-item">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                <circle cx="10" cy="10" r="8" stroke="#1e3a5f" stroke-width="1.5"/>
+                <path d="M10 6v4l2.5 2.5" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <strong>Local Transit</strong>
+                <span>MMTS: Nearest station is "Hitec City" on the MMTS line, approx. 3 km from campus. Bus routes 219/219J from central Hyderabad.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="venue-accommodation">
+          <h3>Recommended Hotels</h3>
+          <p class="venue-accommodation-note">Block rooms early — December is peak season in Hyderabad. Contact Dr. Jai Gautam or Dr. Viswanath Chinthapenta for university guest house availability.</p>
+          <div class="hotel-list">
+            <div class="hotel-card">
+              <div class="hotel-name">Novotel Hyderabad Convention Centre</div>
+              <div class="hotel-detail">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M7 1.5C5 1.5 3.5 3 3.5 5c0 3 3.5 7.5 3.5 7.5s3.5-4.5 3.5-7.5c0-2-1.5-3.5-3.5-3.5z" stroke="#d4a843" stroke-width="1.2"/>
+                  <circle cx="7" cy="5" r="1.2" stroke="#d4a843" stroke-width="1.2"/>
+                </svg>
+                <span>Near Hitec City, approx. 5 km from UoH</span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <div class="hotel-name">Hyatt Hyderabad Gachi Bowli</div>
+              <div class="hotel-detail">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M7 1.5C5 1.5 3.5 3 3.5 5c0 3 3.5 7.5 3.5 7.5s3.5-4.5 3.5-7.5c0-2-1.5-3.5-3.5-3.5z" stroke="#d4a843" stroke-width="1.2"/>
+                  <circle cx="7" cy="5" r="1.2" stroke="#d4a843" stroke-width="1.2"/>
+                </svg>
+                <span>Gachi Bowli, approx. 3 km from campus</span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <div class="hotel-name">Lemon Tree Premier, Hitec City</div>
+              <div class="hotel-detail">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M7 1.5C5 1.5 3.5 3 3.5 5c0 3 3.5 7.5 3.5 7.5s3.5-4.5 3.5-7.5c0-2-1.5-3.5-3.5-3.5z" stroke="#d4a843" stroke-width="1.2"/>
+                  <circle cx="7" cy="5" r="1.2" stroke="#d4a843" stroke-width="1.2"/>
+                </svg>
+                <span>Hitec City, approx. 6 km from UoH</span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <div class="hotel-name">Radisson Hyderabad Hitec City</div>
+              <div class="hotel-detail">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M7 1.5C5 1.5 3.5 3 3.5 5c0 3 3.5 7.5 3.5 7.5s3.5-4.5 3.5-7.5c0-2-1.5-3.5-3.5-3.5z" stroke="#d4a843" stroke-width="1.2"/>
+                  <circle cx="7" cy="5" r="1.2" stroke="#d4a843" stroke-width="1.2"/>
+                </svg>
+                <span>Hitec City Main Road, approx. 6 km</span>
+              </div>
+            </div>
+            <div class="hotel-card">
+              <div class="hotel-name">IIT Hyderabad Guest House</div>
+              <div class="hotel-detail">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M7 1.5C5 1.5 3.5 3 3.5 5c0 3 3.5 7.5 3.5 7.5s3.5-4.5 3.5-7.5c0-2-1.5-3.5-3.5-3.5z" stroke="#d4a843" stroke-width="1.2"/>
+                  <circle cx="7" cy="5" r="1.2" stroke="#d4a843" stroke-width="1.2"/>
+                </svg>
+                <span>Kandi Village, approx. 8 km — limited availability</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SPEAKING -->
-    <section class="section" id="speaking">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Community</p>
-          <h2 class="section-title">Speaking &amp; Mentoring</h2>
+  <!-- ABSTRACT SUBMISSION -->
+  <section class="section" id="abstract">
+    <div class="container">
+      <div class="abstract-banner reveal">
+        <div class="abstract-banner-content">
+          <h2>Submit Your Abstract</h2>
+          <p>Present your research in one of four thematic tracks. Oral and poster presentations welcome.</p>
+          <div class="abstract-tracks">
+            <span class="track-tag">Track 1: Aerospace &amp; Automotive</span>
+            <span class="track-tag">Track 2: Surface Chemistry &amp; Nanomaterials</span>
+            <span class="track-tag">Track 3: Bio-Surfaces &amp; Medical</span>
+            <span class="track-tag">Track 4: Smart Coatings</span>
+          </div>
         </div>
-        <div class="speaking-grid">
-          <article class="speaking-card reveal">
-            <h3>Judge</h3>
-            <p class="speaking-title">DubHacks</p>
-            <p class="speaking-date">Oct 2025</p>
-            <span class="speaking-category">Education</span>
-            <p>Served as Judge and Mentor at one of the largest collegiate hackathons in the Pacific Northwest, guiding student teams and evaluating their innovative projects.</p>
-          </article>
-          <article class="speaking-card reveal">
-            <h3>Judge &amp; Mentor</h3>
-            <p class="speaking-title">&amp;hacks: William &amp; Mary&rsquo;s Annual Hackathon</p>
-            <p class="speaking-date">Sep 2025</p>
-            <span class="speaking-category">Education</span>
-            <p>Evaluated projects in AI, sustainability, health, and social good, and mentored student teams on UI/UX, product-market fit, and app development.</p>
-          </article>
-        </div>
+        <a href="https://www.iclprp10.in/" class="btn btn-primary" target="_blank" rel="noopener">Submit at iclprp10.in</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- MEDIA -->
-    <section class="section section--subtle" id="media">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Press</p>
-          <h2 class="section-title">Media Coverage</h2>
-        </div>
-        <div class="media-card reveal">
-          <a href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" class="media-thumbnail" target="_blank" rel="noopener">
-            <img src="Thumbnail.png" alt="MoneyBot WNKY Media Coverage" loading="lazy" />
-            <span class="media-badge">News</span>
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Contact Us</h2>
+      </div>
+      <div class="contact-grid reveal">
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#1e3a5f" opacity="0.1"/>
+              <circle cx="24" cy="18" r="8" stroke="#1e3a5f" stroke-width="1.5"/>
+              <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#1e3a5f" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Dr. Jai Gautam</h3>
+          <p class="contact-role">Conference Chair</p>
+          <p class="contact-dept">Associate Professor, Dept. of Chemistry &amp;<br>Coordinator, Centre for Lipid Science and Green Propulsion (CLSP)<br>University of Hyderabad</p>
+          <a href="mailto:surface2026.clsp@uohyd.ac.in" class="contact-email">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <rect x="1.5" y="3.5" width="13" height="9" rx="1" stroke="#d4a843" stroke-width="1.25"/>
+              <path d="M1.5 5l6.5 4.5L14.5 5" stroke="#d4a843" stroke-width="1.25" stroke-linecap="round"/>
+            </svg>
+            surface2026.clsp@uohyd.ac.in
           </a>
-          <div class="media-content">
-            <div class="media-copy">
-              <div class="media-meta">
-                <img src="wnky.jpeg" alt="WNKY 40" />
-                <span class="media-source">WNKY 40</span>
-              </div>
-              <h3>MoneyBot Enters Classrooms Around the Region</h3>
-              <p class="media-desc">WNKY News 40 coverage featuring MoneyBot LLC&rsquo;s initiative to bring financial literacy education to classrooms across the region.</p>
-            </div>
-            <div class="media-proof">
-              <div class="media-quote">
-                <blockquote>&ldquo;Millions of students are graduating without knowing what financial education is like, what assets are, what liabilities. Now, we are kind of giving them financial education, which I think is very important for students to live a better life.&rdquo;</blockquote>
-                <cite>&mdash; Venkat Sai Kolli, Web Design &amp; Developer Specialist at MoneyBot LLC</cite>
-              </div>
-              <a class="btn btn-ghost" href="https://www.wnky.com/moneybot-enters-classrooms-around-the-region/" target="_blank" rel="noopener">Watch Video &amp; Read Article</a>
-            </div>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-avatar">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <circle cx="24" cy="24" r="24" fill="#d4a843" opacity="0.1"/>
+              <circle cx="24" cy="18" r="8" stroke="#d4a843" stroke-width="1.5"/>
+              <path d="M8 42c0-8.837 7.163-16 16-16s16 7.163 16 16" stroke="#d4a843" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
           </div>
+          <h3>Dr. Viswanath Chinthapenta</h3>
+          <p class="contact-role">Conference Chair</p>
+          <p class="contact-dept">Associate Professor, Dept. of Mechanical Engineering &amp;<br>Coordinator, Centre for Lipid Science and Green Propulsion (CLSP)<br>University of Hyderabad</p>
+          <a href="mailto:surface2026.mech@uohyd.ac.in" class="contact-email">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <rect x="1.5" y="3.5" width="13" height="9" rx="1" stroke="#d4a843" stroke-width="1.25"/>
+              <path d="M1.5 5l6.5 4.5L14.5 5" stroke="#d4a843" stroke-width="1.25" stroke-linecap="round"/>
+            </svg>
+            surface2026.mech@uohyd.ac.in
+          </a>
         </div>
       </div>
-    </section>
-
-    <!-- WORK WITH ME -->
-    <section class="section section--subtle" id="work">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Opportunities</p>
-          <h2 class="section-title">Ways to Collaborate</h2>
-        </div>
-        <div class="work-grid">
-          <article class="work-card reveal">
-            <div class="work-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
-            </div>
-            <h3>Invite Me to Speak</h3>
-            <p>I enjoy speaking on podcasts and at conferences. Interested in having me on your show or at your event? Send me the details.</p>
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Submit an Invite</a>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <h3>Book a 1-on-1 Consult</h3>
-            <p>Need advice on your startup, product, or career? Let&rsquo;s chat one-on-one.</p>
-            <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Book a Consult</a>
-          </article>
-          <article class="work-card reveal">
-            <div class="work-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            </div>
-            <h3>Hire Me for Advisory</h3>
-            <p>Looking for guidance on community-building, marketing, or hosting events? Let&rsquo;s talk.</p>
-            <a class="btn btn-ghost" href="#contact">Contact</a>
-          </article>
-        </div>
+      <div class="contact-web reveal">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <circle cx="10" cy="10" r="8.5" stroke="#1e3a5f" stroke-width="1.5"/>
+          <path d="M3 10h14M10 3c-2.5 2.5-3 5-3 7s.5 4.5 3 7M10 3c2.5 2.5 3 5 3 7s-.5 4.5-3 7" stroke="#1e3a5f" stroke-width="1.25" stroke-linecap="round"/>
+        </svg>
+        <a href="https://www.iclprp10.in/" target="_blank" rel="noopener">www.iclprp10.in</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Contact</p>
-          <h2 class="section-title">Let&rsquo;s Work Together</h2>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-cards reveal">
-            <div class="contact-card">
-              <h3>Open to opportunities</h3>
-              <p>I&rsquo;m always open to discussing new projects, startup ideas, and opportunities. Feel free to reach out.</p>
-            </div>
-            <div class="contact-card">
-              <h3>Follow Along</h3>
-              <p>Catch my latest updates on startups, tech, and entrepreneurship.</p>
-              <a class="btn btn-ghost" href="https://www.linkedin.com/in/venkatsaikolli" target="_blank" rel="noopener" style="margin-top:0.75rem;">LinkedIn Profile</a>
-            </div>
-            <div class="contact-card">
-              <h3>Response Time</h3>
-              <p>I typically respond within 24&ndash;48 hours. Looking forward to connecting.</p>
-            </div>
-          </div>
-          <form id="contactForm" class="contact-form reveal" autocomplete="off">
-            <h3>Send a Message</h3>
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" required />
-            </div>
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input type="text" id="subject" name="subject" placeholder="Mentoring / Collab / Coffee Chat?" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
-            <p class="success-msg" id="successMsg" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Venkat Sai Kolli. Built with HTML, CSS, and JavaScript.</p>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="32" height="32" rx="6" fill="#1e3a5f"/>
+            <path d="M6 22 L16 10 L26 22" stroke="#d4a843" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 22 L16 15 L21 22" stroke="#d4a843" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+          </svg>
+          <div>
+            <strong>SURFACE 2026</strong>
+            <span>Symposium on Research &amp; Future Applications of Surface Modifications</span>
+          </div>
+        </div>
+        <div class="footer-meta">
+          <p>December 17–18, 2026 &middot; University of Hyderabad &middot; <a href="https://www.iclprp10.in/" target="_blank" rel="noopener">iclprp10.in</a></p>
+          <p>Organized by Centre for Lipid Science and Green Propulsion (CLSP), University of Hyderabad</p>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script src="testimonials-config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
