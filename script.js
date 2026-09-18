@@ -1,6 +1,6 @@
 /* =============================================
    VENKAT SAI KOLLI — PORTFOLIO JS
-   Scroll reveal + nav toggle + form
+   Nav + scroll reveal + testimonials + contact form
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const current = sections.reduce((active, section) => {
       return section.getBoundingClientRect().top <= 140 ? section : active;
-    }, sections[0]);
+    }, null);
 
     navLinks.forEach(link => {
       const isActive = current && link.getAttribute('href') === `#${current.id}`;
@@ -55,6 +55,18 @@ document.addEventListener('DOMContentLoaded', () => {
   updateNavigation();
   window.addEventListener('scroll', updateNavigation, { passive: true });
 
+  /* --- Back to top --- */
+  const backToTop = document.getElementById('backToTop');
+  if (backToTop) {
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 600);
+    }, { passive: true });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
   /* --- Scroll reveal --- */
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length > 0) {
@@ -63,16 +75,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (entry.isIntersecting) {
           const siblings = [...entry.target.parentElement.querySelectorAll('.reveal')];
           const idx = siblings.indexOf(entry.target);
-          const delay = idx * 90;
-          setTimeout(() => {
-            entry.target.style.setProperty('--reveal-delay', `${delay}ms`);
-            entry.target.classList.add('visible');
-          }, delay);
+          const delay = idx * 80;
+          entry.target.style.setProperty('--reveal-delay', `${delay}ms`);
+          entry.target.classList.add('visible');
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.06,
+      threshold: 0.08,
       rootMargin: '0px 0px -40px 0px'
     });
 
@@ -81,16 +91,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* --- Approved testimonials --- */
   const testimonialTrack = document.getElementById('testimonialTrack');
+  const testimonialDots = document.getElementById('testimonialDots');
   if (testimonialTrack) {
     const testimonialButtons = document.querySelectorAll('[data-testimonial-direction]');
     testimonialButtons.forEach(button => {
       button.addEventListener('click', () => {
         const direction = button.dataset.testimonialDirection === 'prev' ? -1 : 1;
         const card = testimonialTrack.querySelector('.testimonial-card');
-        const distance = card ? card.getBoundingClientRect().width + 20 : testimonialTrack.clientWidth * 0.8;
+        const distance = card ? card.getBoundingClientRect().width + 16 : testimonialTrack.clientWidth * 0.8;
         testimonialTrack.scrollBy({ left: direction * distance, behavior: 'smooth' });
       });
     });
+
+    const setupTestimonialDots = () => {
+      if (!testimonialDots) return;
+      const cards = [...testimonialTrack.querySelectorAll('.testimonial-card')];
+      testimonialDots.replaceChildren();
+      if (cards.length <= 1) return;
+
+      cards.forEach((card, index) => {
+        const dot = document.createElement('button');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Go to testimonial ${index + 1}`);
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => {
+          card.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        });
+        testimonialDots.appendChild(dot);
+      });
+
+      let scrollTimeout;
+      testimonialTrack.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          const trackRect = testimonialTrack.getBoundingClientRect();
+          let closestIndex = 0;
+          let closestDistance = Infinity;
+          cards.forEach((card, index) => {
+            const distance = Math.abs(card.getBoundingClientRect().left - trackRect.left);
+            if (distance < closestDistance) {
+              closestDistance = distance;
+              closestIndex = index;
+            }
+          });
+          [...testimonialDots.children].forEach((dot, index) => {
+            dot.classList.toggle('active', index === closestIndex);
+          });
+        }, 100);
+      }, { passive: true });
+    };
 
     const testimonialsEndpoint = window.TESTIMONIALS_ENDPOINT || 'testimonials.json';
     const renderTestimonials = testimonials => {
@@ -136,6 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
         card.appendChild(quote);
         testimonialTrack.appendChild(card);
       });
+
+      setupTestimonialDots();
     };
 
     fetch(testimonialsEndpoint)
@@ -156,22 +207,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Unable to load local testimonial fallback.', fallbackError);
           });
       });
-  }
-
-  /* --- Subtle pointer depth for desktop cards --- */
-  if (window.matchMedia('(pointer: fine)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    document.querySelectorAll('.project-card, .work-card, .pub-card, .speaking-card, .podcast-card').forEach(card => {
-      card.addEventListener('pointermove', (event) => {
-        const rect = card.getBoundingClientRect();
-        const rotateX = ((event.clientY - rect.top) / rect.height - 0.5) * -3;
-        const rotateY = ((event.clientX - rect.left) / rect.width - 0.5) * 3;
-        card.style.transform = `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
-      });
-
-      card.addEventListener('pointerleave', () => {
-        card.style.transform = '';
-      });
-    });
   }
 
   /* --- Contact form --- */
