@@ -36,3 +36,16 @@ The entire site is one page (`index.html`) composed of `<section>` blocks in scr
 
 - Images referenced from `index.html`/`testimonials-config.js` live at the repo root (`ProfilePic.jpeg`, `Thumbnail.png`, `wnky.jpeg`) and under `images/` (testimonial photos). Some project/podcast thumbnails are hotlinked to external CDNs rather than stored locally.
 - Bio/project/publication content in `index.html` reflects real, current facts about the site owner (roles, ventures, publications, press) — verify with the user before changing factual claims rather than inferring updates.
+
+## Redesign (`redesign/`): React + Vite + Motion
+
+A ground-up redesign lives in `redesign/`, alongside the original static site (which is untouched and still the deployed version until the redesign is published). Same content, same section IDs, new stack.
+
+- **Run:** `cd redesign && npm install && npm run dev` (dev server on :5173). **Build:** `npm run build` outputs `redesign/dist/` (static files, deploy anywhere). No test suite.
+- **Stack:** Vite + React, `motion/react` (Motion) for all animation, `@phosphor-icons/react` for icons, `@fontsource-variable/geist` (Geist, single sans font). Plain CSS: tokens in `src/styles.css` (`:root`, with a `prefers-color-scheme: dark` block), section styles in `src/sections.css`. GSAP is not installed; add it only if a scroll-pinned section is needed (do not mix it with Motion in one component tree).
+- **Structure:** `src/App.jsx` composes one component per section in `src/components/` (`Nav`, `Hero`, `About`, `Projects`, `Publications`, `Testimonials`, `Podcast`, `Speaking`, `Media`, `Work`, `Footer`, `BackToTop`). Section content is inline in each component. Nav links, active-section highlighting (IntersectionObserver) and `scroll-margin` depend on the section `id`s, same as the old site.
+- **Motion rules:** shared `Reveal` (scroll fade/rise) and `SectionHead` (word-mask title reveal) components; easing is `EASE` in `src/motion.js`. Animate only transform/opacity; everything respects `prefers-reduced-motion`; no scroll listeners (use `useScroll`/IntersectionObserver). A `whileInView` trigger must sit on an element that is visible, not one clipped by an `overflow: hidden` mask (it never reports as in view).
+- **Testimonials:** `src/config.js` holds `TESTIMONIALS_ENDPOINT` and `TESTIMONIAL_PHOTOS` (files in `public/images/`), replacing `testimonials-config.js`. `Testimonials.jsx` fetches the endpoint, falls back to `/testimonials.json` (which does not exist yet), and shows skeleton/empty states.
+- **Contact:** the Contact section, its nav button and its mobile-menu entry were removed from the redesign on request (the old static site still has them). One link still points at `#contact` and goes nowhere: the advisory "Contact" button (`Work.jsx`).
+- **Known content gaps carried over from the old site:** "Submit an Invite", "Book a Consult" and the IIW7 "View Project" links are still `#`; the Startup Kitchen podcast thumbnail is now a local file (`public/startup-kitchen.jpg`), replacing the broken LinkedIn hotlink; `ProfilePic.jpeg` is only 231x231, so the hero portrait is soft.
+- **Design language:** light theme (dark via system setting), indigo `--accent`, pill buttons with a nested arrow circle, one radius scale, double-bezel portrait, floating glass nav. See `[[portfolio-design-preference]]`.
